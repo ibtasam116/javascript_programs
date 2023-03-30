@@ -21,7 +21,7 @@
         <div class="container">
             <nav class="navbar navbar-expand-lg navbar-dark ">
                 <div class="container-fluid">
-                    <a class="navbar-brand" href="#">Navbar</a>
+                    <a class="navbar-brand" href="#">Programs</a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                         data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
@@ -38,8 +38,8 @@
     <main>
         <div class="container">
             <div class="row my-3">
-                <div class="col-sm-12 col-md-4">
-                    <div class="card" style="width: 22rem; min-height: 20vh;">
+                <div class="col-sm-12 col-md-3">
+                    <div class="card w-100 mb-4 mb-md-0">
                         <div class="card-body">
                             <h6 class="card-subtitle mb-2 text-muted">Write a js program to find maximum between two
                                 numbers.</h6>
@@ -47,26 +47,47 @@
                                 placeholder="Enter first number" aria-label=".form-control-sm example">
                             <input id="input2" class="form-control form-control-sm my-2" type="text"
                                 placeholder="Enter second number" aria-label=".form-control-sm example">
-                            <button type="button" onclick="maxMin()" class="btn btn-secondary w-50 maxMin">Check
-                                Output</button>
+                            <div class="card-button">
+                                <button type="button" onclick="maxMin()" class="btn btn-secondary w-75">Check
+                                    Output</button>
+                            </div>
                             <div id="maxOutput" class="text-center text-danger fw-bold mt-2"></div>
                         </div>
                     </div>
                 </div>
 
-                <div class="col-sm-12 col-md-4">
-                    <div class="card" style="width: 22rem; min-height: 20vh;">
+                <div class="col-sm-12 col-md-3">
+                    <div class="card w-100 mb-4 mb-md-0">
                         <div class="card-body">
-                            <h6 class="card-subtitle mb-2 text-muted">Write a js program to find maximum between three numbers.</h6>
+                            <h6 class="card-subtitle mb-2 text-muted">Write a js program to find maximum between three
+                                numbers.</h6>
                             <input id="input3" class="form-control form-control-sm" type="text"
                                 placeholder="Enter first number" aria-label=".form-control-sm example">
                             <input id="input4" class="form-control form-control-sm my-2" type="text"
                                 placeholder="Enter second number" aria-label=".form-control-sm example">
                             <input id="input5" class="form-control form-control-sm my-2" type="text"
                                 placeholder="Enter third number" aria-label=".form-control-sm example">
-                            <button type="button" onclick="maxMinBtw3()" class="btn btn-secondary w-50 maxMin">Check
-                                Output</button>
+                                <div class="card-button">
+
+                                    <button type="button" onclick="maxMinBtw3()" class="btn btn-secondary w-75">Check
+                                        Output</button>
+                                    </div>
                             <div id="maxOutputbtw3" class="text-center text-danger fw-bold mt-2"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-12 col-md-3">
+                    <div class="card w-100 mb-4 mb-md-0">
+                        <div class="card-body">
+                            <h6 class="card-subtitle mb-2 text-muted">Write a js program to check whether a number is
+                                negative, positive or zero.</h6>
+                            <input id="input6" class="form-control form-control-sm mb-2" type="text"
+                                placeholder="Enter first number" aria-label=".form-control-sm example">
+                                <button type="button" onclick="numPosNeZe()" class="btn btn-secondary w-75">Check
+                                    Output</button>
+                                </div>
+                            <div id="numPosNeZe" class="text-center text-danger fw-bold mt-2"></div>
                         </div>
                     </div>
                 </div>
