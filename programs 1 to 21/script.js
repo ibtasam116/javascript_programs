@@ -1,12 +1,19 @@
 
 
 
-function maxMin(){
+function maxMin() {
     var num1 = document.getElementById("input1").value;
+    var num2 = document.getElementById("input2").value;
 
-    alert(num1);
-
-    autoClearInput();
+    if(num1 > num2){
+        document.getElementById("maxOutput").innerHTML = num1 + " is maximum";
+    }
+    else if ( num1 < num2){
+        document.getElementById("maxOutput").innerHTML = num2 + " is maximum";
+    }
+    else{
+        document.getElementById("maxOutput").innerHTML = "Error";
+    }
 }
 
 
@@ -15,9 +22,10 @@ function maxMin(){
 
 
 
+// function showOutput(){
+// }
 
-
-function autoClearInput(){
+function autoClearInput() {
     document.getElementById("input1").value = "";
 }
 
