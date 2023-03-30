@@ -70,14 +70,24 @@ function evenOdd() {
     var num = document.getElementById("input8").value;
 
     if (num % 2 == 0) {
-        document.getElementById("evenOddOutput").innerHTML = num + " is a even number"
+        document.getElementById("evenOddOutput").innerHTML = num + " is a even number";
     }
     else{
-        document.getElementById("evenOddOutput").innerHTML = num + " is a even number"
+        document.getElementById("evenOddOutput").innerHTML = num + " is a even number";
     }
 }
 
+// Write a js program to check whether a year is leap year or not.
+function leapYear() {
+    var year = document.getElementById("input9").value;
 
+    if (year % 4 == 0) {
+        document.getElementById("leapYearOutput").innerHTML = year + " is a leap year";
+    }
+    else{
+        document.getElementById("leapYearOutput").innerHTML = year + " is not a leap year";
+    }
+}
 
 
 
