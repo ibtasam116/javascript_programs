@@ -55,6 +55,32 @@ function numPosNeZe() {
     }
 }
 
+// Write a js program to check whether a number is divisible by 5 and 11 or not.
+
+
+
+
+
+
+
+
+
+// Write a js program to check whether a number is even or odd.
+function evenOdd() {
+    var num = document.getElementById("input8").value;
+
+    if (num % 2 == 0) {
+        document.getElementById("evenOddOutput").innerHTML = num + " is a even number"
+    }
+    else{
+        document.getElementById("evenOddOutput").innerHTML = num + " is a even number"
+    }
+}
+
+
+
+
+
 
 
 
