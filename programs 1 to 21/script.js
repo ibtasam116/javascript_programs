@@ -72,7 +72,7 @@ function evenOdd() {
     if (num % 2 == 0) {
         document.getElementById("evenOddOutput").innerHTML = num + " is a even number";
     }
-    else{
+    else {
         document.getElementById("evenOddOutput").innerHTML = num + " is a even number";
     }
 }
@@ -84,7 +84,7 @@ function leapYear() {
     if (year % 4 == 0) {
         document.getElementById("leapYearOutput").innerHTML = year + " is a leap year";
     }
-    else{
+    else {
         document.getElementById("leapYearOutput").innerHTML = year + " is not a leap year";
     }
 }
@@ -94,11 +94,11 @@ function leapYear() {
 function checkAlphaOrNot() {
     var alpha = document.getElementById("input10").value;
 
-    if((alpha >= "a" && alpha <= "z") || (alpha >= "A" && alpha <= "Z")){
-        document.getElementById('checkAlphaOrNot').innerHTML= alpha + " is a alphabet";
+    if ((alpha >= "a" && alpha <= "z") || (alpha >= "A" && alpha <= "Z")) {
+        document.getElementById('checkAlphaOrNot').innerHTML = alpha + " is a alphabet";
     }
-    else{
-        document.getElementById('checkAlphaOrNot').innerHTML= alpha + " is not alphabet";
+    else {
+        document.getElementById('checkAlphaOrNot').innerHTML = alpha + " is not alphabet";
     }
 }
 
@@ -109,7 +109,7 @@ function vowelConsonant() {
     if (alpha === "a" || alpha == "e" || alpha == "i" || alpha == "o" || alpha == "u" && alpha == "A" || alpha == "E" || alpha == "I" || alpha == "O" || alpha == "U") {
         document.getElementById('vowelConsonant').innerHTML = alpha + " is a vowel";
     }
-    else{
+    else {
         document.getElementById('vowelConsonant').innerHTML = alpha + " is a consonant";
     }
 }
@@ -124,7 +124,7 @@ function alphaDigitSpecial() {
     else if (anyOne >= 1 || anyOne == 0 || anyOne <= -1) {
         document.getElementById('alphaDigitSpecial').innerHTML = anyOne + " is a digit"
     }
-    else{
+    else {
         document.getElementById('alphaDigitSpecial').innerHTML = anyOne + " is a special character"
     }
 }
@@ -133,13 +133,13 @@ function alphaDigitSpecial() {
 function uppercaseLowercase() {
     var alpha = document.getElementById('input13').value;
     if (alpha >= 'a' && alpha <= 'z') {
-        document.getElementById('uppercaseLowercase').innerHTML= alpha + " is lowercase character"
+        document.getElementById('uppercaseLowercase').innerHTML = alpha + " is lowercase character"
     }
     else if (alpha >= 'A' && alpha <= 'Z') {
-        document.getElementById('uppercaseLowercase').innerHTML= alpha + " is Uppercase character"
+        document.getElementById('uppercaseLowercase').innerHTML = alpha + " is Uppercase character"
     }
-    else{
-        document.getElementById('uppercaseLowercase').innerHTML= alpha + " is not a character"
+    else {
+        document.getElementById('uppercaseLowercase').innerHTML = alpha + " is not a character"
     }
 }
 
@@ -149,7 +149,7 @@ function printWeek() {
 
     if (num == 1) {
         document.getElementById('printWeek').innerHTML = "Monday"
-    } 
+    }
     else if (num == 2) {
         document.getElementById('printWeek').innerHTML = "Tuesday"
     }
@@ -170,6 +170,51 @@ function printWeek() {
     }
     else {
         document.getElementById('printWeek').innerHTML = "Invalid! input"
+    }
+}
+
+// Write a js program to input month number and print number of days in that month.
+function printMonth() {
+    var num = document.getElementById('input15').value;
+
+    if (num == 1) {
+        document.getElementById('printMonth').innerHTML = "January"
+    }
+    else if (num == 2) {
+        document.getElementById('printMonth').innerHTML = "February"
+    }
+    else if (num == 3) {
+        document.getElementById('printMonth').innerHTML = "March"
+    }
+    else if (num == 4) {
+        document.getElementById('printMonth').innerHTML = "April"
+    }
+    else if (num == 5) {
+        document.getElementById('printMonth').innerHTML = "May"
+    }
+    else if (num == 6) {
+        document.getElementById('printMonth').innerHTML = "June"
+    }
+    else if (num == 7) {
+        document.getElementById('printMonth').innerHTML = "July"
+    }
+    else if (num == 8) {
+        document.getElementById('printMonth').innerHTML = "August"
+    }
+    else if (num == 9) {
+        document.getElementById('printMonth').innerHTML = "September"
+    }
+    else if (num == 10) {
+        document.getElementById('printMonth').innerHTML = "October"
+    }
+    else if (num == 11) {
+        document.getElementById('printMonth').innerHTML = "November"
+    }
+    else if (num == 12) {
+        document.getElementById('printMonth').innerHTML = "December"
+    }
+    else {
+        document.getElementById('printMonth').innerHTML = "Invalid! input"
     }
 }
 
