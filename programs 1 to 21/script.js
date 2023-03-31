@@ -129,6 +129,19 @@ function alphaDigitSpecial() {
     }
 }
 
+// Write a js program to check whether a character is uppercase or lowercase alphabet.
+function uppercaseLowercase() {
+    var alpha = document.getElementById('input13').value;
+    if (alpha >= 'a' && alpha <= 'z') {
+        document.getElementById('uppercaseLowercase').innerHTML= alpha + " is lowercase character"
+    }
+    else if (alpha >= 'A' && alpha <= 'Z') {
+        document.getElementById('uppercaseLowercase').innerHTML= alpha + " is Uppercase character"
+    }
+    else{
+        document.getElementById('uppercaseLowercase').innerHTML= alpha + " is not a character"
+    }
+}
 
 
 
