@@ -1,15 +1,41 @@
-.nav-back{
-    background-color: #03071e;
+
+body{
+    background-color: #f2f4f3;
 }
 
-.card-button{
+.nav-back {
+    background-color: #264653;
+}
+
+.card{
+    background: #f8f9fa;
+    border-radius: 20px;
+}
+
+.card-button {
     text-align: center;
 }
 
+.shadow-byMe {
+    box-shadow: rgba(38, 70, 83, 0.4) 0px 2px 4px, rgba(38, 70, 83, 0.3) 0px 7px 13px -3px, rgba(38, 70, 83, 0.2) 0px -3px 0px inset;
+}
 
+.card{
+    transition: 0.5s;
+}
 
+.card:hover {
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
 
+button{
+    background-color: #264653 !important;
+}
 
+button{
+    transition: 0.2s;
+}
 
-
-
+button:hover{
+    box-shadow: rgba(38, 70, 83, 1) 0px 7px 29px 0px;
+}
