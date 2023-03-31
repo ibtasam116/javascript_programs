@@ -56,14 +56,16 @@ function numPosNeZe() {
 }
 
 // Write a js program to check whether a number is divisible by 5 and 11 or not.
+function numDivisi5And11() {
+    var num = document.getElementById('input7').value;
 
-
-
-
-
-
-
-
+    if (num % 5 == 0 && num % 11 == 0) {
+        document.getElementById('numDivisi5And11').innerHTML = num + " is divisible by 5 and 11"
+    }
+    else{
+        document.getElementById('numDivisi5And11').innerHTML = num + " is not divisible by 5 and 11"
+    }
+}
 
 // Write a js program to check whether a number is even or odd.
 function evenOdd() {
