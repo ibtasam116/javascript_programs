@@ -143,7 +143,35 @@ function uppercaseLowercase() {
     }
 }
 
+// Write a js program to input week number and print week day.
+function printWeek() {
+    var num = document.getElementById('input14').value;
 
+    if (num == 1) {
+        document.getElementById('printWeek').innerHTML = "Monday"
+    } 
+    else if (num == 2) {
+        document.getElementById('printWeek').innerHTML = "Tuesday"
+    }
+    else if (num == 3) {
+        document.getElementById('printWeek').innerHTML = "Wednesday"
+    }
+    else if (num == 4) {
+        document.getElementById('printWeek').innerHTML = "Thursday"
+    }
+    else if (num == 5) {
+        document.getElementById('printWeek').innerHTML = "Friday"
+    }
+    else if (num == 6) {
+        document.getElementById('printWeek').innerHTML = "Saturday"
+    }
+    else if (num == 7) {
+        document.getElementById('printWeek').innerHTML = "Sunday"
+    }
+    else {
+        document.getElementById('printWeek').innerHTML = "Invalid! input"
+    }
+}
 
 
 
