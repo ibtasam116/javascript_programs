@@ -114,6 +114,21 @@ function vowelConsonant() {
     }
 }
 
+// Write a js program to input any character and check whether it is alphabet, digit or special character.
+function alphaDigitSpecial() {
+    var anyOne = document.getElementById('input12').value;
+
+    if ((anyOne >= 'a' && anyOne <= 'z') || (anyOne >= 'A' && anyOne <= 'Z')) {
+        document.getElementById('alphaDigitSpecial').innerHTML = anyOne + " is a alphabet"
+    }
+    else if (anyOne >= 1 || anyOne == 0 || anyOne <= -1) {
+        document.getElementById('alphaDigitSpecial').innerHTML = anyOne + " is a digit"
+    }
+    else{
+        document.getElementById('alphaDigitSpecial').innerHTML = anyOne + " is a special character"
+    }
+}
+
 
 
 
