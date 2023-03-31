@@ -90,7 +90,17 @@ function leapYear() {
 }
 
 
+// Write a js program to check whether a character is alphabet or not.
+function checkAlphaOrNot() {
+    var alpha = document.getElementById("input10").value;
 
+    if((alpha >= "a" && alpha <= "z") || (alpha >= "A" && alpha <= "Z")){
+        document.getElementById('checkAlphaOrNot').innerHTML= alpha + " is a alphabet"
+    }
+    else{
+        document.getElementById('checkAlphaOrNot').innerHTML= alpha + " is not alphabet"
+    }
+}
 
 
 
