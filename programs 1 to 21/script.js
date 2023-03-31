@@ -95,10 +95,22 @@ function checkAlphaOrNot() {
     var alpha = document.getElementById("input10").value;
 
     if((alpha >= "a" && alpha <= "z") || (alpha >= "A" && alpha <= "Z")){
-        document.getElementById('checkAlphaOrNot').innerHTML= alpha + " is a alphabet"
+        document.getElementById('checkAlphaOrNot').innerHTML= alpha + " is a alphabet";
     }
     else{
-        document.getElementById('checkAlphaOrNot').innerHTML= alpha + " is not alphabet"
+        document.getElementById('checkAlphaOrNot').innerHTML= alpha + " is not alphabet";
+    }
+}
+
+// Write a js program to input any alphabet and check whether it is vowel or consonant.
+function vowelConsonant() {
+    var alpha = document.getElementById('input11').value;
+
+    if (alpha === "a" || alpha == "e" || alpha == "i" || alpha == "o" || alpha == "u" && alpha == "A" || alpha == "E" || alpha == "I" || alpha == "O" || alpha == "U") {
+        document.getElementById('vowelConsonant').innerHTML = alpha + " is a vowel";
+    }
+    else{
+        document.getElementById('vowelConsonant').innerHTML = alpha + " is a consonant";
     }
 }
 
