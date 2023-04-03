@@ -25,7 +25,7 @@ function maxMin() {
     else {
         highestNumber = num2
     }
-    
+
     document.getElementById("maxOutput").innerHTML = highestNumber + " is maximum";
 }
 
@@ -35,30 +35,20 @@ function maxMinBtw3() {
     var num2 = document.getElementById("input4").value;
     var num3 = document.getElementById("input5").value;
 
-    var highestNumber;
+    var largest;
 
-    if (num1 > num2) {
-        if (num1 > num3) {
-            highestNumber = num1;
-            // document.getElementById("maxOutputbtw3").innerHTML = num1 + " is maximum";
-        }
-        else {
-            highestNumber = num3;
-            // document.getElementById("maxOutputbtw3").innerHTML = num3 + " is maximum";
-        }
+    if (num1 > num2 && num1 > num3) {
+        largest = num1;
+    }
+    else if (num2 > num1 && num2 > num3) {
+        largest = num2;
     }
     else {
-        if (num2 > num3) {
-            highestNumber = num2;
-            // document.getElementById("maxOutputbtw3").innerHTML = num2 + " is maximum";
-        }
-        else {
-            highestNumber = num3;
-            // document.getElementById("maxOutputbtw3").innerHTML = num3 + " is maximum";
-        }
+        largest = num3;
     }
 
-    document.getElementById("maxOutputbtw3").innerHTML = highestNumber + " is maximum";
+    document.getElementById("maxOutputbtw3").innerHTML = largest + " is maximum";
+
 }
 
 // Write a js program to check whether a number is negative, positive or zero.
@@ -243,12 +233,22 @@ function printMonth() {
 
 // Write a js program to count total number of notes in given amount.
 function countNotes() {
-    var note = document.getElementById('input16').value;
+    var amount = document.getElementById('input16').value;
 
-    if (!note) {
-        document.getElementById('countNotes').innerHTML = "Please enter amount";
-        alert("Please enter amount");
-    }
+    // if (!note) {
+    //     document.getElementById('countNotes').innerHTML = "Please enter amount";
+    //     alert("Please enter amount");
+    // }
+
+    // var note5000, note1000, note500, note100, note50, note20, note10, coin5, coin2, coin1 = 0;
+
+    // if (amount >= 5000) {
+    //     note5000 = amount/5000
+    //     amount -= note5000 * 5000
+    // }
+
+    // console.log(note5000);
+
 }
 
 
