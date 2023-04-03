@@ -5,6 +5,8 @@ function maxMin() {
     var num1 = document.getElementById("input1").value;
     var num2 = document.getElementById("input2").value;
 
+    let highestNumber;
+
     if (!num1) {
         document.getElementById("maxOutput").innerHTML = "Please enter first number";
         alert("Please enter first number");
@@ -17,26 +19,14 @@ function maxMin() {
         return;
     }
 
-    if (num2 > num1) {
-        document.getElementById("maxOutput").innerHTML = num2 + " is maximum";
-        console.log(num2);
+    if (num1 > num2) {
+        highestNumber = num1
     }
     else {
-        document.getElementById("maxOutput").innerHTML = num1 + " is maximum";
-        console.log(num1);
+        highestNumber = num2
     }
-
-
-
-    // if (num1 > num2) {
-    //     document.getElementById("maxOutput").innerHTML = num1 + " is maximum";
-    // }
-    // else if (num1 < num2) {
-    //     document.getElementById("maxOutput").innerHTML = num2 + " is maximum";
-    // }
-    // else {
-    //     document.getElementById("maxOutput").innerHTML = "Error";
-    // }
+    
+    document.getElementById("maxOutput").innerHTML = highestNumber + " is maximum";
 }
 
 // Write a js program to find maximum between three numbers.
