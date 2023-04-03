@@ -17,12 +17,26 @@ function maxMin() {
         return;
     }
 
-    if (num1 > num2) {
-        document.getElementById("maxOutput").innerHTML = num1 + " is maximum";
+    if (num2 > num1) {
+        document.getElementById("maxOutput").innerHTML = num2 + " is maximum";
+        console.log(num2);
     }
     else {
-        document.getElementById("maxOutput").innerHTML = num2 + " is maximum";
+        document.getElementById("maxOutput").innerHTML = num1 + " is maximum";
+        console.log(num1);
     }
+
+
+
+    // if (num1 > num2) {
+    //     document.getElementById("maxOutput").innerHTML = num1 + " is maximum";
+    // }
+    // else if (num1 < num2) {
+    //     document.getElementById("maxOutput").innerHTML = num2 + " is maximum";
+    // }
+    // else {
+    //     document.getElementById("maxOutput").innerHTML = "Error";
+    // }
 }
 
 // Write a js program to find maximum between three numbers.
