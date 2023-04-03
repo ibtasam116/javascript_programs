@@ -5,7 +5,7 @@ function maxMin() {
     var num1 = document.getElementById("input1").value;
     var num2 = document.getElementById("input2").value;
 
-    let highestNumber;
+    let highestNumber;    /* This variable used for storing highest number */
 
     if (!num1) {
         document.getElementById("maxOutput").innerHTML = "Please enter first number";
@@ -35,22 +35,30 @@ function maxMinBtw3() {
     var num2 = document.getElementById("input4").value;
     var num3 = document.getElementById("input5").value;
 
+    var highestNumber;
+
     if (num1 > num2) {
         if (num1 > num3) {
-            document.getElementById("maxOutputbtw3").innerHTML = num1 + " is maximum";
+            highestNumber = num1;
+            // document.getElementById("maxOutputbtw3").innerHTML = num1 + " is maximum";
         }
         else {
-            document.getElementById("maxOutputbtw3").innerHTML = num3 + " is maximum";
+            highestNumber = num3;
+            // document.getElementById("maxOutputbtw3").innerHTML = num3 + " is maximum";
         }
     }
     else {
         if (num2 > num3) {
-            document.getElementById("maxOutputbtw3").innerHTML = num2 + " is maximum";
+            highestNumber = num2;
+            // document.getElementById("maxOutputbtw3").innerHTML = num2 + " is maximum";
         }
         else {
-            document.getElementById("maxOutputbtw3").innerHTML = num3 + " is maximum";
+            highestNumber = num3;
+            // document.getElementById("maxOutputbtw3").innerHTML = num3 + " is maximum";
         }
     }
+
+    document.getElementById("maxOutputbtw3").innerHTML = highestNumber + " is maximum";
 }
 
 // Write a js program to check whether a number is negative, positive or zero.
@@ -238,7 +246,8 @@ function countNotes() {
     var note = document.getElementById('input16').value;
 
     if (!note) {
-        alert("hi");
+        document.getElementById('countNotes').innerHTML = "Please enter amount";
+        alert("Please enter amount");
     }
 }
 
