@@ -1,5 +1,5 @@
 
-
+// !====================== 1 ======================! 
 // Write a js program to find maximum between two numbers.
 function maxMin() {
     var num1 = document.getElementById("input1").value;
@@ -32,6 +32,7 @@ function maxMin() {
     document.getElementById("maxOutput").innerHTML = highestNumber + " is maximum";
 }
 
+// !====================== 2 ======================!
 // Write a js program to find maximum between three numbers.
 function maxMinBtw3() {
     var num1 = document.getElementById("input3").value;
@@ -72,24 +73,19 @@ function maxMinBtw3() {
         largest = num3;
     }
 
-    // console.log("The largest number is " + largest);
-
     document.getElementById("maxOutputbtw3").innerHTML = largest + " is maximum";
 }
 
+// !====================== 3 ======================!
 // Write a js program to check whether a number is negative, positive or zero.
 function numPosNeZe() {
     var num = document.getElementById('input6').value;
-
-    num = parseFloat(num);
 
     if (!num) {
         document.getElementById("numPosNeZe").innerHTML = "Please enter number";
         alert("Please enter number");
         return;
     }
-
-    // error
 
     if (num > 0) {
         document.getElementById("numPosNeZe").innerHTML = num + " is positive number";
@@ -104,9 +100,17 @@ function numPosNeZe() {
     }
 }
 
+// !====================== 4 ======================!
 // Write a js program to check whether a number is divisible by 5 and 11 or not.
 function numDivisi5And11() {
     var num = document.getElementById('input7').value;
+
+
+    if (!num) {
+        document.getElementById('numDivisi5And11').innerHTML = "Please enter number";
+        alert("Please enter number");
+        return;
+    }
 
     if (num % 5 == 0 && num % 11 == 0) {
         document.getElementById('numDivisi5And11').innerHTML = num + " is divisible by 5 and 11"
@@ -116,9 +120,16 @@ function numDivisi5And11() {
     }
 }
 
+// !====================== 5 ======================!
 // Write a js program to check whether a number is even or odd.
 function evenOdd() {
     var num = document.getElementById("input8").value;
+
+    if (!num) {
+        document.getElementById("evenOddOutput").innerHTML = "Please enter number";
+        alert("Please enter number");
+        return;
+    }
 
     if (num % 2 == 0) {
         document.getElementById("evenOddOutput").innerHTML = num + " is a even number";
@@ -128,9 +139,16 @@ function evenOdd() {
     }
 }
 
+// !====================== 6 ======================!
 // Write a js program to check whether a year is leap year or not.
 function leapYear() {
     var year = document.getElementById("input9").value;
+
+    if (!year) {
+        document.getElementById("leapYearOutput").innerHTML = "Please enter year";
+        alert("Please enter year");
+        return;
+    }
 
     if (year % 4 == 0) {
         document.getElementById("leapYearOutput").innerHTML = year + " is a leap year";
@@ -197,7 +215,7 @@ function uppercaseLowercase() {
 // Write a js program to input week number and print week day.
 function printWeek() {
     var num = document.getElementById('input14').value;
-    
+
     if (num == 1) {
         document.getElementById('printWeek').innerHTML = "Monday"
     }
@@ -285,11 +303,17 @@ function countNotes() {
     note5000 = note1000 = note500 = note100 = note50 = note20 = note10 = coin5 = coin2 = coin1 = 0;
 
     if (amount >= 5000) {
-        note5000 = amount/5000
+        note5000 = amount / 5000
         amount -= note5000 * 5000
     }
 
-    console.log(note5000);
+    // if (amount >= 1000) {
+    //     note1000 = amount/1000
+    //     amount -= note1000 * 1000
+    // }
+
+    console.log(parseFloat(note5000));
+    // console.log(parseFloat(note1000));
     // console.log(amount);
 
 }
