@@ -218,9 +218,17 @@ function alphaDigitSpecial() {
     }
 }
 
+// !====================== 10 ======================!
 // Write a js program to check whether a character is uppercase or lowercase alphabet.
 function uppercaseLowercase() {
     var alpha = document.getElementById('input13').value;
+
+    if (!alpha) {
+        document.getElementById('uppercaseLowercase').innerHTML = "Please enter character";
+        alert("Please enter character");
+        return;
+    }
+
     if (alpha >= 'a' && alpha <= 'z') {
         document.getElementById('uppercaseLowercase').innerHTML = alpha + " is lowercase character"
     }
@@ -232,9 +240,16 @@ function uppercaseLowercase() {
     }
 }
 
+// !====================== 11 ======================!
 // Write a js program to input week number and print week day.
 function printWeek() {
     var num = document.getElementById('input14').value;
+
+    if (!num) {
+        document.getElementById('printWeek').innerHTML = "Please enter week number";
+        alert("Please enter week number");
+        return;
+    }
 
     if (num == 1) {
         document.getElementById('printWeek').innerHTML = "Monday"
@@ -262,9 +277,16 @@ function printWeek() {
     }
 }
 
+// !====================== 12 ======================!
 // Write a js program to input month number and print number of days in that month.
 function printMonth() {
     var num = document.getElementById('input15').value;
+
+    if (!num) {
+        document.getElementById('printMonth').innerHTML = "Please enter month number";
+        alert("Please enter month number");
+        return;
+    }
 
     if (num == 1) {
         document.getElementById('printMonth').innerHTML = "January"
@@ -307,6 +329,7 @@ function printMonth() {
     }
 }
 
+// !====================== 13 ======================!
 // Write a js program to count total number of notes in given amount.
 function countNotes() {
     var amount = document.getElementById('input16').value;
