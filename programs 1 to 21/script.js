@@ -388,6 +388,15 @@ function checkTriangleOrNot() {
         alert("please enter third angle of triangle");
         return;
     }
+    
+    var sumOfTriangle = angle1 + angle2 + angle3;
+    
+    if (sumOfTriangle === 180) {
+        document.getElementById('checkTriangleOrNot').innerHTML = "This triangle is valid.";
+    }
+    else{
+        document.getElementById('checkTriangleOrNot').innerHTML = "This triangle is not valid.";
+    }
 }
 
 
