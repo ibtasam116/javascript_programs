@@ -524,10 +524,84 @@ function profitLoss() {
         // document.getElementById("profitLoss").innerHTML = `The item has a loss of ${Math.abs(profitOrLoss).toFixed(2)}.`;
         // console.log(`The item has a loss of ${Math.abs(profitOrLoss).toFixed(2)}.`);
     }
-
 }
 
+// !====================== 19 ======================!
+// Write a js program to input marks of five subjects Physics, Chemistry, Biology, Mathematics and Computer. Calculate percentage and grade according to following:
+// Percentage >= 90% : Grade A
+// Percentage >= 80% : Grade B
+// Percentage >= 70% : Grade C
+// Percentage >= 60% : Grade D
+// Percentage >= 40% : Grade E
+// Percentage < 40% : Grade F
+function perGraFiveSubjects() {
+    let physicsMarks = parseFloat(document.getElementById('physics').value);
+    let chemistryMarks = parseFloat(document.getElementById('chemistry').value);
+    let biologyMarks = parseFloat(document.getElementById('biology').value);
+    let mathematicsMarks = parseFloat(document.getElementById('mathematics').value);
+    let computerMarks = parseFloat(document.getElementById('computer').value);
 
+    if (!physicsMarks) {
+        document.getElementById('perGraFiveSubjects').innerHTML = "Please enter marks obtained in Physics";
+        alert("Please enter marks obtained in Physics");
+        return;
+    }
+
+    if (!chemistryMarks) {
+        document.getElementById('perGraFiveSubjects').innerHTML = "Please enter marks obtained in Chemistry";
+        alert("Please enter marks obtained in Chemistry");
+        return;
+    }
+
+    if (!biologyMarks) {
+        document.getElementById('perGraFiveSubjects').innerHTML = "Please enter marks obtained in Biology";
+        alert("Please enter marks obtained in Biology");
+        return;
+    }
+
+    if (!mathematicsMarks) {
+        document.getElementById('perGraFiveSubjects').innerHTML = "Please enter marks obtained in Mathematics";
+        alert("Please enter marks obtained in Mathematics");
+        return;
+    }
+
+    if (!computerMarks) {
+        document.getElementById('perGraFiveSubjects').innerHTML = "Please enter marks obtained in Computer";
+        alert("Please enter marks obtained in Computer");
+        return;
+    }
+
+    const totalMarks = physicsMarks + chemistryMarks + biologyMarks + mathematicsMarks + computerMarks;
+    const percentage = (totalMarks / 500) * 100;
+    console.log(percentage);
+
+    let grade;
+
+    if (percentage >= 90) {
+        grade = "A+";
+    }
+    else if (percentage >= 80) {
+        grade = "A";
+    }
+    else if (percentage >= 70) {
+        grade = "B";
+    }
+    else if (percentage >= 60) {
+        grade = "C";
+    }
+    else if (percentage >= 50) {
+        grade = "D";
+    }
+    else if (percentage >= 33) {
+        grade = "E";
+    }
+    else {
+        grade = "F";
+    }
+
+    document.getElementById("perGraFiveSubjects").innerHTML = "Total marks obtained: " + totalMarks + "/500<br> Percentage obtained: " + percentage + "% <br> Grade: " + grade;
+    // document.getElementById('perGraFiveSubjects').innerHTML = `Total marks obtained: ${totalMarks}/500 <br> Percentage obtained: ${percentage.toFixed(2)}% <br> Grade: ${grade}`
+}
 
 
 

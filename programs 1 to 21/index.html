@@ -386,21 +386,61 @@
                 <!-- !====================== 19 ======================! -->
                 <!-- Write a js program to input marks of five subjects Physics, Chemistry, Biology, Mathematics and Computer. Calculate percentage and grade according to following: -->
                 <div class="col-sm-12 col-md-4">
-                    <div class="card w-100 mb-4 mb-md-0" style="min-height: 261.38px;">
+                    <div class="card w-100 mb-4 mb-md-0" style="min-height: 500px;">
                         <div class="card-body">
-                            <h6 class="card-subtitle mb-4 text-muted">Write a js program to input marks of five subjects
+                            <h6 class="card-subtitle mb-2 text-muted">Write a js program to input marks of five subjects
                                 Physics, Chemistry, Biology, Mathematics and Computer. Calculate percentage and grade
                                 according to following:
+                                <ul>
+                                    <li>Percentage >= 90% : Grade A</li>
+                                    <li>Percentage >= 80% : Grade B</li>
+                                    <li>Percentage >= 70% : Grade C</li>
+                                    <li>Percentage >= 60% : Grade D</li>
+                                    <li>Percentage >= 40% : Grade E</li>
+                                    <li>Percentage < &nbsp;&nbsp; 40% : Grade F</li>
+                                </ul>
                             </h6>
-                            <input id="input29" class="form-control form-control-sm mb-3" type="text"
-                                placeholder="Enter cost price" aria-label=".form-control-sm example">
-                            <input id="input30" class="form-control form-control-sm my-3" type="text"
-                                placeholder="Enter selling price" aria-label=".form-control-sm example">
+                            <input id="physics" class="form-control form-control-sm mb-1" type="text"
+                                placeholder="Enter marks obtained in Physics" aria-label=".form-control-sm example">
+                            <input id="chemistry" class="form-control form-control-sm my-1" type="text"
+                                placeholder="Enter marks obtained in Chemistry" aria-label=".form-control-sm example">
+                            <input id="biology" class="form-control form-control-sm my-1" type="text"
+                                placeholder="Enter marks obtained in Biology" aria-label=".form-control-sm example">
+                            <input id="mathematics" class="form-control form-control-sm my-1" type="text"
+                                placeholder="Enter marks obtained in Mathematics" aria-label=".form-control-sm example">
+                            <input id="computer" class="form-control form-control-sm my-1" type="text"
+                                placeholder="Enter marks obtained in Computer" aria-label=".form-control-sm example">
                             <div class="card-button">
-                                <button type="button" onclick="profitLoss()" class="btn btn-secondary w-75">Check
+                                <button type="button" onclick="perGraFiveSubjects()"
+                                    class="btn btn-secondary w-75">Check
                                     Output</button>
                             </div>
-                            <div id="profitLoss" class="text-center text-danger fw-bold mt-2"></div>
+                            <div id="perGraFiveSubjects" class="text-center text-danger fw-bold mt-2"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- !====================== 20 ======================! -->
+                <!-- Write a js program to input basic salary of an employee and calculate its Gross salary according to following: -->
+                <div class="col-sm-12 col-md-4">
+                    <div class="card w-100 mb-4 mb-md-0" style="min-height: 500px;">
+                        <div class="card-body">
+                            <h6 class="card-subtitle mb-5 text-muted">Write a js program to input basic salary of an
+                                employee and calculate its Gross salary according to following:
+                                <ul class="mt-3">
+                                    <li>Basic Salary <= 10000 <br> HRA=20%, DA=80%</li>
+                                    <li class="my-2">Basic Salary <= 20000 <br> HRA=25%, DA=90%</li>
+                                    <li>Basic Salary > 20000 <br> HRA = 30%, DA = 95%</li>
+                                </ul>
+                            </h6>
+                            <input id="basicSalary" class="form-control form-control-sm mb-5" type="text"
+                                placeholder="Enter basic salary of an employee" aria-label=".form-control-sm example">
+                            <div class="card-button mb-5">
+                                <button type="button" onclick="calGrossSalary()"
+                                    class="btn btn-secondary w-75">Check
+                                    Output</button>
+                            </div>
+                            <div id="calGrossSalary" class="text-center text-danger fw-bold mt-2"></div>
                         </div>
                     </div>
                 </div>
