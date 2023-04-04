@@ -512,14 +512,17 @@ function profitLoss() {
     const profitOrLoss = sellingPrice - costPrice;
 
     if (profitOrLoss > 0) {
-        document.getElementById("profitLoss").innerHTML = `The item has a profit of ${profitOrLoss.toFixed(2)}`;
-        console.log(`The item has a profit of ${profitOrLoss.toFixed(2)}.`);
+        document.getElementById("profitLoss").innerHTML = "The item has a profit of " + profitOrLoss.toFixed(2);
+        // document.getElementById("profitLoss").innerHTML = `The item has a profit of ${profitOrLoss.toFixed(2)}.`;
     }
     else if (profitOrLoss === 0) {
         document.getElementById("profitLoss").innerHTML = "The item has neither a profit nor a loss.";
     }
     else {
-        
+        // Math.abs method/function is used to remove the negative sign from the integer or floating values.
+        document.getElementById("profitLoss").innerHTML = "The item has a loss of " + Math.abs(profitOrLoss).toFixed(2);
+        // document.getElementById("profitLoss").innerHTML = `The item has a loss of ${Math.abs(profitOrLoss).toFixed(2)}.`;
+        // console.log(`The item has a loss of ${Math.abs(profitOrLoss).toFixed(2)}.`);
     }
 
 }
