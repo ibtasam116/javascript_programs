@@ -368,40 +368,81 @@ function checkTriangleOrNot() {
     var angle2 = document.getElementById('input18').value;
     var angle3 = document.getElementById('input19').value;
 
-    angle1 = parseFloat(angle1);
-    angle2 = parseFloat(angle2);
-    angle3 = parseFloat(angle3);
+    angle1 = parseInt(angle1);
+    angle2 = parseInt(angle2);
+    angle3 = parseInt(angle3);
 
     if (!angle1) {
-        document.getElementById('checkTriangleOrNot').innerHTML = "please enter first angle of triangle";
-        alert("please enter first angle of triangle");
+        document.getElementById('checkTriangleOrNot').innerHTML = "Please enter first angle of triangle";
+        alert("Please enter first angle of triangle");
         return;
     }
+
     if (!angle2) {
-        document.getElementById('checkTriangleOrNot').innerHTML = "please enter second angle of triangle";
-        alert("please enter second angle of triangle");
+        document.getElementById('checkTriangleOrNot').innerHTML = "Please enter second angle of triangle";
+        alert("Please enter second angle of triangle");
         return;
     }
 
     if (!angle3) {
-        document.getElementById('checkTriangleOrNot').innerHTML = "please enter third angle of triangle";
-        alert("please enter third angle of triangle");
+        document.getElementById('checkTriangleOrNot').innerHTML = "Please enter third angle of triangle";
+        alert("Please enter third angle of triangle");
         return;
     }
-    
-    var sumOfTriangle = angle1 + angle2 + angle3;
-    
-    if (sumOfTriangle === 180) {
+
+    // If sum of angles is equal to 180 than valid trianle.
+    var sumOfAngle = angle1 + angle2 + angle3;
+
+    if (sumOfAngle === 180) {
         document.getElementById('checkTriangleOrNot').innerHTML = "This triangle is valid.";
     }
-    else{
+    else {
         document.getElementById('checkTriangleOrNot').innerHTML = "This triangle is not valid.";
     }
 }
 
+// !====================== 15 ======================!
+// Write a js program to input all sides of a triangle and check whether triangle is valid or not.
+function checkTriangleOrNotBySides() {
+    var side1 = document.getElementById('input20').value;
+    var side2 = document.getElementById('input22').value;
+    var side3 = document.getElementById('input21').value;
 
+    side1 = parseInt(side1);
+    side2 = parseInt(side2);
+    side3 = parseInt(side3);
 
+    if (!side1) {
+        document.getElementById('checkTriangleOrNotBySides').innerHTML = "Please enter first side of triangle";
+        alert("Please enter first side of triangle");
+        return;
+    }
 
+    if (!side2) {
+        document.getElementById('checkTriangleOrNotBySides').innerHTML = "Please enter second side of triangle";
+        alert("Please enter second side of triangle");
+        return;
+    }
+
+    if (!side3) {
+        document.getElementById('checkTriangleOrNotBySides').innerHTML = "Please enter third side of triangle";
+        alert("Please enter third side of triangle");
+        return;
+    }
+
+    // if sum of two sides of triangle is greater than third side and this condition for all the side 
+    // of triangle is true than this is valid triangle.
+
+    if ((side1 + side2 > side3) && (side2 + side3 > side1) && side3 + side1 > side2) {
+        document.getElementById('checkTriangleOrNotBySides').innerHTML = "This triangle is valid.";
+    }
+    else {
+        document.getElementById('checkTriangleOrNotBySides').innerHTML = "This triangle is not valid.";
+    }
+}
+
+// !====================== 16 ======================!
+// Write a js program to check whether the triangle is equilateral, isosceles or scalene triangle.
 
 
 
