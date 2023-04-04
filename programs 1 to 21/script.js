@@ -181,7 +181,7 @@ function checkAlphaOrNot() {
 // Write a js program to input any alphabet and check whether it is vowel or consonant.
 function vowelConsonant() {
     var alpha = document.getElementById('input11').value;
-   
+
     if (!alpha) {
         document.getElementById('vowelConsonant').innerHTML = "Please enter character";
         alert("Please enter character");
@@ -361,7 +361,34 @@ function countNotes() {
 
 }
 
+// !====================== 14 ======================!
+// Write a js program to input angles of a triangle and check whether triangle is valid or not.
+function checkTriangleOrNot() {
+    var angle1 = document.getElementById('input17').value;
+    var angle2 = document.getElementById('input18').value;
+    var angle3 = document.getElementById('input19').value;
 
+    angle1 = parseFloat(angle1);
+    angle2 = parseFloat(angle2);
+    angle3 = parseFloat(angle3);
+
+    if (!angle1) {
+        document.getElementById('checkTriangleOrNot').innerHTML = "please enter first angle of triangle";
+        alert("please enter first angle of triangle");
+        return;
+    }
+    if (!angle2) {
+        document.getElementById('checkTriangleOrNot').innerHTML = "please enter second angle of triangle";
+        alert("please enter second angle of triangle");
+        return;
+    }
+
+    if (!angle3) {
+        document.getElementById('checkTriangleOrNot').innerHTML = "please enter third angle of triangle";
+        alert("please enter third angle of triangle");
+        return;
+    }
+}
 
 
 
