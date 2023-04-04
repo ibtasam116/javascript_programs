@@ -5,6 +5,9 @@ function maxMin() {
     var num1 = document.getElementById("input1").value;
     var num2 = document.getElementById("input2").value;
 
+    num1 = parseFloat(num1);
+    num2 = parseFloat(num2);
+
     let highestNumber;    /* This variable used for storing highest number */
 
     if (!num1) {
@@ -35,9 +38,30 @@ function maxMinBtw3() {
     var num2 = document.getElementById("input4").value;
     var num3 = document.getElementById("input5").value;
 
+    num1 = parseFloat(num1);
+    num2 = parseFloat(num2);
+    num3 = parseFloat(num3);
+
     let largest;
 
-    // check the condition
+    if (!num1) {
+        document.getElementById("maxOutputbtw3").innerHTML = "Please enter first number";
+        alert("Please enter first number");
+        return;
+    }
+
+    if (!num2) {
+        document.getElementById("maxOutputbtw3").innerHTML = "Please enter second number";
+        alert("Please enter second number");
+        return;
+    }
+
+    if (!num3) {
+        document.getElementById("maxOutputbtw3").innerHTML = "Please enter third number";
+        alert("Please enter third number");
+        return;
+    }
+
     if (num1 >= num2 && num1 >= num3) {
         largest = num1;
     }
@@ -48,21 +72,24 @@ function maxMinBtw3() {
         largest = num3;
     }
 
-    // display the result
-    console.log("The largest number is " + largest);
+    // console.log("The largest number is " + largest);
 
-
-
-
-
-
-    // document.getElementById("maxOutputbtw3").innerHTML = largest + " is maximum";
-
+    document.getElementById("maxOutputbtw3").innerHTML = largest + " is maximum";
 }
 
 // Write a js program to check whether a number is negative, positive or zero.
 function numPosNeZe() {
     var num = document.getElementById('input6').value;
+
+    num = parseFloat(num);
+
+    if (!num) {
+        document.getElementById("numPosNeZe").innerHTML = "Please enter number";
+        alert("Please enter number");
+        return;
+    }
+
+    // error
 
     if (num > 0) {
         document.getElementById("numPosNeZe").innerHTML = num + " is positive number";
@@ -70,8 +97,10 @@ function numPosNeZe() {
     else if (num < 0) {
         document.getElementById("numPosNeZe").innerHTML = num + " is negative number";
     }
-    else {
+    else if (num == 0) {
         document.getElementById("numPosNeZe").innerHTML = num + " is zero number";
+    } else {
+        document.getElementById("numPosNeZe").innerHTML = "Invalid! Input";
     }
 }
 
