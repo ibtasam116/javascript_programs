@@ -484,8 +484,63 @@ function triEquiIsosScal() {
     else {
         document.getElementById('triEquiIsosScal').innerHTML = "The sides cannot form a triangle.";
     }
+}
+
+
+// !====================== 17 ======================!
+
+
+
+// !====================== 18 ======================!
+// Write a js program to calculate profit or loss.
+function profitLoss() {
+    let costPrice = parseFloat(document.getElementById('input29').value);
+    let sellingPrice = parseFloat(document.getElementById('input30').value);
+
+    if (!costPrice) {
+        document.getElementById("profitLoss").innerHTML = "Please enter cost price";
+        alert("Please enter cost price");
+        return;
+    }
+
+    if (!sellingPrice) {
+        document.getElementById("profitLoss").innerHTML = "Please enter selling price";
+        alert("Please enter selling price");
+        return;
+    }
+
+    const profitOrLoss = sellingPrice - costPrice;
+
+    if (profitOrLoss > 0) {
+        document.getElementById("profitLoss").innerHTML = `The item has a profit of ${profitOrLoss.toFixed(2)}`;
+        console.log(`The item has a profit of ${profitOrLoss.toFixed(2)}.`);
+    }
+    else if (profitOrLoss === 0) {
+        document.getElementById("profitLoss").innerHTML = "The item has neither a profit nor a loss.";
+    }
+    else {
+        
+    }
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
