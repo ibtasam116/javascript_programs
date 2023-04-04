@@ -35,19 +35,28 @@ function maxMinBtw3() {
     var num2 = document.getElementById("input4").value;
     var num3 = document.getElementById("input5").value;
 
-    var largest;
+    let largest;
 
-    if (num1 > num2 && num1 > num3) {
+    // check the condition
+    if (num1 >= num2 && num1 >= num3) {
         largest = num1;
     }
-    else if (num2 > num1 && num2 > num3) {
+    else if (num2 >= num1 && num2 >= num3) {
         largest = num2;
     }
     else {
         largest = num3;
     }
 
-    document.getElementById("maxOutputbtw3").innerHTML = largest + " is maximum";
+    // display the result
+    console.log("The largest number is " + largest);
+
+
+
+
+
+
+    // document.getElementById("maxOutputbtw3").innerHTML = largest + " is maximum";
 
 }
 
