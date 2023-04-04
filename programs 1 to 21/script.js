@@ -197,7 +197,7 @@ function uppercaseLowercase() {
 // Write a js program to input week number and print week day.
 function printWeek() {
     var num = document.getElementById('input14').value;
-
+    
     if (num == 1) {
         document.getElementById('printWeek').innerHTML = "Monday"
     }
@@ -273,19 +273,24 @@ function printMonth() {
 function countNotes() {
     var amount = document.getElementById('input16').value;
 
+    amount = parseFloat(amount);
+
     // if (!note) {
     //     document.getElementById('countNotes').innerHTML = "Please enter amount";
     //     alert("Please enter amount");
     // }
 
-    // var note5000, note1000, note500, note100, note50, note20, note10, coin5, coin2, coin1 = 0;
+    var note5000, note1000, note500, note100, note50, note20, note10, coin5, coin2, coin1;
 
-    // if (amount >= 5000) {
-    //     note5000 = amount/5000
-    //     amount -= note5000 * 5000
-    // }
+    note5000 = note1000 = note500 = note100 = note50 = note20 = note10 = coin5 = coin2 = coin1 = 0;
 
-    // console.log(note5000);
+    if (amount >= 5000) {
+        note5000 = amount/5000
+        amount -= note5000 * 5000
+    }
+
+    console.log(note5000);
+    // console.log(amount);
 
 }
 
