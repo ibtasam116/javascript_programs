@@ -443,9 +443,49 @@ function checkTriangleOrNotBySides() {
 
 // !====================== 16 ======================!
 // Write a js program to check whether the triangle is equilateral, isosceles or scalene triangle.
+function triEquiIsosScal() {
+    var side1 = document.getElementById('input23').value;
+    var side2 = document.getElementById('input24').value;
+    var side3 = document.getElementById('input25').value;
 
+    side1 = parseInt(side1);
+    side2 = parseInt(side2);
+    side3 = parseInt(side3);
 
+    if (!side1) {
+        document.getElementById('triEquiIsosScal').innerHTML = "Please enter first side of triangle";
+        alert("Please enter first side of triangle");
+        return;
+    }
 
+    if (!side2) {
+        document.getElementById('triEquiIsosScal').innerHTML = "Please enter second side of triangle";
+        alert("Please enter second side of triangle");
+        return;
+    }
+
+    if (!side3) {
+        document.getElementById('triEquiIsosScal').innerHTML = "Please enter third side of triangle";
+        alert("Please enter third side of triangle");
+        return;
+    }
+
+    if (side1 + side2 > side3 && side2 + side3 > side1 && side1 + side3 > side2) {
+        if (side1 === side2 && side2 === side3) {
+            document.getElementById('triEquiIsosScal').innerHTML = "The triangle is equilateral.";
+        }
+        else if (side1 === side2 || side2 === side3 || side1 === side3) {
+            document.getElementById('triEquiIsosScal').innerHTML = "The triangle is isosceles.";
+        }
+        else {
+            document.getElementById('triEquiIsosScal').innerHTML = "The triangle is scalene.";
+        }
+    }
+    else {
+        document.getElementById('triEquiIsosScal').innerHTML = "The sides cannot form a triangle.";
+    }
+
+}
 
 
 
