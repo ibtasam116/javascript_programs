@@ -158,10 +158,16 @@ function leapYear() {
     }
 }
 
-
+// !====================== 7 ======================!
 // Write a js program to check whether a character is alphabet or not.
 function checkAlphaOrNot() {
     var alpha = document.getElementById("input10").value;
+
+    if (!alpha) {
+        document.getElementById('checkAlphaOrNot').innerHTML = "Please enter character";
+        alert("Please enter character");
+        return;
+    }
 
     if ((alpha >= "a" && alpha <= "z") || (alpha >= "A" && alpha <= "Z")) {
         document.getElementById('checkAlphaOrNot').innerHTML = alpha + " is a alphabet";
@@ -171,9 +177,16 @@ function checkAlphaOrNot() {
     }
 }
 
+// !====================== 8 ======================!
 // Write a js program to input any alphabet and check whether it is vowel or consonant.
 function vowelConsonant() {
     var alpha = document.getElementById('input11').value;
+   
+    if (!alpha) {
+        document.getElementById('vowelConsonant').innerHTML = "Please enter character";
+        alert("Please enter character");
+        return;
+    }
 
     if (alpha === "a" || alpha == "e" || alpha == "i" || alpha == "o" || alpha == "u" && alpha == "A" || alpha == "E" || alpha == "I" || alpha == "O" || alpha == "U") {
         document.getElementById('vowelConsonant').innerHTML = alpha + " is a vowel";
@@ -183,9 +196,16 @@ function vowelConsonant() {
     }
 }
 
+// !====================== 9 ======================!
 // Write a js program to input any character and check whether it is alphabet, digit or special character.
 function alphaDigitSpecial() {
     var anyOne = document.getElementById('input12').value;
+
+    if (!anyOne) {
+        document.getElementById('alphaDigitSpecial').innerHTML = "Please enter character";
+        alert("Please enter character");
+        return;
+    }
 
     if ((anyOne >= 'a' && anyOne <= 'z') || (anyOne >= 'A' && anyOne <= 'Z')) {
         document.getElementById('alphaDigitSpecial').innerHTML = anyOne + " is a alphabet"
