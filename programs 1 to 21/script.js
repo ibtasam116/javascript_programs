@@ -29,7 +29,7 @@ function maxMin() {
         highestNumber = num2
     }
 
-    document.getElementById("maxOutput").innerHTML = highestNumber + " is maximum";
+    document.getElementById("maxOutput").innerHTML = "<span style='color: green; font-size: 18px;'>' " + highestNumber + " '</span> is maximum";
 }
 
 // !====================== 2 ======================!
@@ -73,7 +73,7 @@ function maxMinBtw3() {
         largest = num3;
     }
 
-    document.getElementById("maxOutputbtw3").innerHTML = largest + " is maximum";
+    document.getElementById("maxOutputbtw3").innerHTML = "<span style='color: green; font-size: 18px;'>' " + largest + " '</span> is maximum";
 }
 
 // !====================== 3 ======================!
@@ -88,15 +88,15 @@ function numPosNeZe() {
     }
 
     if (num > 0) {
-        document.getElementById("numPosNeZe").innerHTML = num + " is positive number";
+        document.getElementById("numPosNeZe").innerHTML = "<span style='color: green; font-size: 18px;'>' " + num + " '</span> is positive number";
     }
     else if (num < 0) {
-        document.getElementById("numPosNeZe").innerHTML = num + " is negative number";
+        document.getElementById("numPosNeZe").innerHTML = "<span style='color: green; font-size: 18px;'>' " + num + " '</span> is negative number";
     }
     else if (num == 0) {
-        document.getElementById("numPosNeZe").innerHTML = num + " is zero number";
+        document.getElementById("numPosNeZe").innerHTML = "<span style='color: green; font-size: 18px;'>' " + num + " '</span> is zero number";
     } else {
-        document.getElementById("numPosNeZe").innerHTML = "Invalid! Input";
+        document.getElementById("numPosNeZe").innerHTML = "<span style='color: black; font-size: 20px;'>Invalid! Input</span>";
     }
 }
 
@@ -113,10 +113,10 @@ function numDivisi5And11() {
     }
 
     if (num % 5 == 0 && num % 11 == 0) {
-        document.getElementById('numDivisi5And11').innerHTML = num + " is divisible by 5 and 11"
+        document.getElementById('numDivisi5And11').innerHTML = "<span style='color: green; font-size: 18px;'>' " + num + " '</span> is divisible by 5 and 11"
     }
     else {
-        document.getElementById('numDivisi5And11').innerHTML = num + " is not divisible by 5 and 11"
+        document.getElementById('numDivisi5And11').innerHTML = "<span style='color: black; font-size: 18px;'>' " + num + " '</span> is not divisible by 5 and 11"
     }
 }
 
@@ -132,10 +132,10 @@ function evenOdd() {
     }
 
     if (num % 2 == 0) {
-        document.getElementById("evenOddOutput").innerHTML = num + " is a even number";
+        document.getElementById("evenOddOutput").innerHTML = "<span style='color: green; font-size: 18px;'>' " + num + " '</span> is a even number";
     }
     else {
-        document.getElementById("evenOddOutput").innerHTML = num + " is a even number";
+        document.getElementById("evenOddOutput").innerHTML = "<span style='color: black; font-size: 18px;'>' " + num + " '</span> is a odd number";
     }
 }
 
@@ -151,10 +151,10 @@ function leapYear() {
     }
 
     if (year % 4 == 0) {
-        document.getElementById("leapYearOutput").innerHTML = year + " is a leap year";
+        document.getElementById("leapYearOutput").innerHTML = "<span style='color: green; font-size: 18px;'>' " + year + " '</span> is a leap year";
     }
     else {
-        document.getElementById("leapYearOutput").innerHTML = year + " is not a leap year";
+        document.getElementById("leapYearOutput").innerHTML = "<span style='color: black; font-size: 18px;'>' " + year + " '</span> is not a leap year";
     }
 }
 
@@ -170,10 +170,10 @@ function checkAlphaOrNot() {
     }
 
     if ((alpha >= "a" && alpha <= "z") || (alpha >= "A" && alpha <= "Z")) {
-        document.getElementById('checkAlphaOrNot').innerHTML = alpha + " is a alphabet";
+        document.getElementById('checkAlphaOrNot').innerHTML = "<span style='color: green; font-size: 18px;'>' " + alpha + " '</span> is a alphabet";
     }
     else {
-        document.getElementById('checkAlphaOrNot').innerHTML = alpha + " is not alphabet";
+        document.getElementById('checkAlphaOrNot').innerHTML = "<span style='color: black; font-size: 18px;'>' " + alpha + " '</span> is not alphabet";
     }
 }
 
@@ -189,10 +189,10 @@ function vowelConsonant() {
     }
 
     if (alpha === "a" || alpha == "e" || alpha == "i" || alpha == "o" || alpha == "u" && alpha == "A" || alpha == "E" || alpha == "I" || alpha == "O" || alpha == "U") {
-        document.getElementById('vowelConsonant').innerHTML = alpha + " is a vowel";
+        document.getElementById('vowelConsonant').innerHTML = "<span style='color: green; font-size: 18px;'>' " + alpha + " '</span> is a vowel";
     }
     else {
-        document.getElementById('vowelConsonant').innerHTML = alpha + " is a consonant";
+        document.getElementById('vowelConsonant').innerHTML = "<span style='color: green; font-size: 18px;'>' " + alpha + " '</span> is a consonant";
     }
 }
 
@@ -208,13 +208,13 @@ function alphaDigitSpecial() {
     }
 
     if ((anyOne >= 'a' && anyOne <= 'z') || (anyOne >= 'A' && anyOne <= 'Z')) {
-        document.getElementById('alphaDigitSpecial').innerHTML = anyOne + " is a alphabet"
+        document.getElementById('alphaDigitSpecial').innerHTML = "<span style='color: green; font-size: 18px;'>' " + anyOne + " '</span> is a alphabet"
     }
     else if (anyOne >= 1 || anyOne == 0 || anyOne <= -1) {
-        document.getElementById('alphaDigitSpecial').innerHTML = anyOne + " is a digit"
+        document.getElementById('alphaDigitSpecial').innerHTML = "<span style='color: green; font-size: 18px;'>' " + anyOne + " '</span> is a digit"
     }
     else {
-        document.getElementById('alphaDigitSpecial').innerHTML = anyOne + " is a special character"
+        document.getElementById('alphaDigitSpecial').innerHTML = "<span style='color: green; font-size: 20px;'>' " + anyOne + " '</span> is a special character"
     }
 }
 
