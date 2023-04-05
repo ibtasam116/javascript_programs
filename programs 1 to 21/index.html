@@ -449,21 +449,25 @@
                 <div class="col-sm-12 col-md-4">
                     <div class="card w-100 mb-4 mb-md-0" style="min-height: 500px;">
                         <div class="card-body">
-                            <h6 class="card-subtitle mb-5 text-muted">Write a js program to input basic salary of an
-                                employee and calculate its Gross salary according to following:
+                            <h6 class="card-subtitle text-muted">Write a js program to input electricity unit
+                                charges and calculate total electricity bill according to the given condition:
                                 <ul class="mt-3">
-                                    <li>Basic Salary <= 10000 <br> HRA=20%, DA=80%</li>
-                                    <li class="my-2">Basic Salary <= 20000 <br> HRA=25%, DA=90%</li>
-                                    <li>Basic Salary > 20000 <br> HRA = 30%, DA = 95%</li>
+                                    <li>For first 50 units Rs. 0.50/unit</li>
+                                    <li class="my-2">For next 100 units Rs. 0.75/unit</li>
+                                    <li>For next 100 units Rs. 1.20/unit</li>
+                                    <li>For unit above 250 Rs. 1.50/unit</li>
                                 </ul>
                             </h6>
-                            <input id="basicSalary" class="form-control form-control-sm mb-5" type="text"
-                                placeholder="Enter basic salary of an employee" aria-label=".form-control-sm example">
+                            <h6 class="card-subtitle mb-4 text-muted">An additional surcharge of 20% is added to the
+                                bill
+                            </h6>
+                            <input id="unitCharges" class="form-control form-control-sm mb-5" type="text"
+                                placeholder="Enter electricity unit charges" aria-label=".form-control-sm example">
                             <div class="card-button">
-                                <button type="button" onclick="calGrossSalary()" class="btn btn-secondary w-75">Check
+                                <button type="button" onclick="electricityBill()" class="btn btn-secondary w-75">Check
                                     Output</button>
                             </div>
-                            <div id="calGrossSalary" class="text-center text-danger fw-bold mt-2"></div>
+                            <div id="electricityBill" class="text-center text-danger fw-bold mt-2"></div>
                         </div>
                     </div>
                 </div>
