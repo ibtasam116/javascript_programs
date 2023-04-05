@@ -331,35 +331,63 @@ function printMonth() {
 
 // !====================== 13 ======================!
 // Write a js program to count total number of notes in given amount.
-function countNotes() {
-    var amount = document.getElementById('input16').value;
+// function countNotes() {
+//     var amount = document.getElementById('input16').value;
 
-    amount = parseFloat(amount);
+//     amount = parseFloat(amount);
 
-    // if (!note) {
-    //     document.getElementById('countNotes').innerHTML = "Please enter amount";
-    //     alert("Please enter amount");
-    // }
+//     if (!amount) {
+//         document.getElementById('countNotes').innerHTML = "Please enter amount";
+//         alert("Please enter amount");
+//     }
 
-    var note5000, note1000, note500, note100, note50, note20, note10, coin5, coin2, coin1;
+//     var note500, note100, note50, note20, note10, note5, note2, note1;
 
-    note5000 = note1000 = note500 = note100 = note50 = note20 = note10 = coin5 = coin2 = coin1 = 0;
+//     /* Initialize all notes to 0 */
+//     note500 = note100 = note50 = note20 = note10 = note5 = note2 = note1 = 0;
 
-    if (amount >= 5000) {
-        note5000 = amount / 5000
-        amount -= note5000 * 5000
-    }
 
-    // if (amount >= 1000) {
-    //     note1000 = amount/1000
-    //     amount -= note1000 * 1000
-    // }
+//     if (amount >= 500) {
+//         note500 = amount / 500;
+//         amount -= note500 * 500;
+//     }
+//     if (amount >= 100) {
+//         note100 = amount / 100;
+//         amount -= note100 * 100;
+//     }
+//     if (amount >= 50) {
+//         note50 = amount / 50;
+//         amount -= note50 * 50;
+//     }
+//     if (amount >= 20) {
+//         note20 = amount / 20;
+//         amount -= note20 * 20;
+//     }
+//     if (amount >= 10) {
+//         note10 = amount / 10;
+//         amount -= note10 * 10;
+//     }
+//     if (amount >= 5) {
+//         note5 = amount / 5;
+//         amount -= note5 * 5;
+//     }
+//     if (amount >= 2) {
+//         note2 = amount / 2;
+//         amount -= note2 * 2;
+//     }
+//     if (amount >= 1) {
+//         note1 = amount;
+//     }
 
-    console.log(parseFloat(note5000));
-    // console.log(parseFloat(note1000));
-    // console.log(amount);
-
-}
+//     console.log(note500)
+//     console.log(note100)
+//     console.log(note50)
+//     console.log(note20)
+//     console.log(note10)
+//     console.log(note5)
+//     console.log(note2)
+//     console.log(note1)
+// }
 
 // !====================== 14 ======================!
 // Write a js program to input angles of a triangle and check whether triangle is valid or not.
