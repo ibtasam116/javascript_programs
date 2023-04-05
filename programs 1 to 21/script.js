@@ -633,6 +633,8 @@ function calGrossSalary() {
     }
 
     let grossSalary = basicSalary + HRA + DA;
+
+    document.getElementById("calGrossSalary").innerHTML = "Basic Salary: " + basicSalary + "<br> HRA: " + HRA + " <br> DA: " + DA + "<br> Gross Salary: " + grossSalary;
 }
 
 
