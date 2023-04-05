@@ -488,8 +488,49 @@ function triEquiIsosScal() {
 
 
 // !====================== 17 ======================!
+// Write a js program to find all roots of a quadratic equation.
+function quadraticEquation() {
+    let a = parseFloat(document.getElementById('input26').value);
+    let b = parseFloat(document.getElementById('input27').value);
+    let c = parseFloat(document.getElementById('input28').value);
 
+    if (!a) {
+        document.getElementById('quadraticEquation').innerHTML = "Please enter coefficient of x^2";
+        alert("Please enter coefficient of x^2");
+        return;
+    }
 
+    if (!b) {
+        document.getElementById('quadraticEquation').innerHTML = "Please enter coefficient of x";
+        alert("Please enter coefficient of x");
+        return;
+    }
+
+    if (!c) {
+        document.getElementById('quadraticEquation').innerHTML = "Please enter constant term";
+        alert("Please enter constant term");
+        return;
+    }
+
+    const discriminant = b * b - 4 * a * c;
+    // const discriminant = Math.pow(b, 2) - 4 * a * c;
+
+    if (discriminant > 0) {
+        const root1 = (-b + Math.sqrt(discriminant)) / (2 * a);
+        const root2 = (-b - Math.sqrt(discriminant)) / (2 * a);
+        document.getElementById('quadraticEquation').innerHTML = "The roots of the quadratic equation are <span style='color: green; font-size: 18px;'>" + root1 + " </span> and <span style='color: green; font-size: 18px;'>" + root2 + "</span>.";
+        // console.log(`The roots of the quadratic equation are ${root1} and ${root2}.`);
+    }
+    else if (discriminant === 0) {
+        const root = -b / (2 * a);
+        document.getElementById('quadraticEquation').innerHTML = "The root of the quadratic equation is <span style='color: green; font-size: 18px;'>" + root + "</span>.";
+        // console.log(`The root of the quadratic equation is ${root}.`);
+    }
+    else {
+        console.log("The quadratic equation has no real roots.");
+    }
+
+}
 
 // !====================== 18 ======================!
 // Write a js program to calculate profit or loss.
