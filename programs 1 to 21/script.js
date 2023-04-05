@@ -230,13 +230,13 @@ function uppercaseLowercase() {
     }
 
     if (alpha >= 'a' && alpha <= 'z') {
-        document.getElementById('uppercaseLowercase').innerHTML = alpha + " is lowercase character"
+        document.getElementById('uppercaseLowercase').innerHTML = "<span style='color: green; font-size: 20px;'>' " + alpha + " '</span> is lowercase character"
     }
     else if (alpha >= 'A' && alpha <= 'Z') {
-        document.getElementById('uppercaseLowercase').innerHTML = alpha + " is Uppercase character"
+        document.getElementById('uppercaseLowercase').innerHTML = "<span style='color: green; font-size: 18px;'>' " + alpha + " '</span> is Uppercase character"
     }
     else {
-        document.getElementById('uppercaseLowercase').innerHTML = alpha + " is not a character"
+        document.getElementById('uppercaseLowercase').innerHTML = "<span style='color: black; font-size: 18px;'>' " + alpha + " '</span> is not a character"
     }
 }
 
@@ -252,28 +252,28 @@ function printWeek() {
     }
 
     if (num == 1) {
-        document.getElementById('printWeek').innerHTML = "Monday"
+        document.getElementById('printWeek').innerHTML = "<span style='color: green; font-size: 18px;'>Monday</span>"
     }
     else if (num == 2) {
-        document.getElementById('printWeek').innerHTML = "Tuesday"
+        document.getElementById('printWeek').innerHTML = "<span style='color: green; font-size: 18px;'>Tuesday</span>"
     }
     else if (num == 3) {
-        document.getElementById('printWeek').innerHTML = "Wednesday"
+        document.getElementById('printWeek').innerHTML = "<span style='color: green; font-size: 18px;'>Wednesday</span>"
     }
     else if (num == 4) {
-        document.getElementById('printWeek').innerHTML = "Thursday"
+        document.getElementById('printWeek').innerHTML = "<span style='color: green; font-size: 18px;'>Thursday</span>"
     }
     else if (num == 5) {
-        document.getElementById('printWeek').innerHTML = "Friday"
+        document.getElementById('printWeek').innerHTML = "<span style='color: green; font-size: 18px;'>Friday</span>"
     }
     else if (num == 6) {
-        document.getElementById('printWeek').innerHTML = "Saturday"
+        document.getElementById('printWeek').innerHTML = "<span style='color: green; font-size: 18px;'>Saturday</span>"
     }
     else if (num == 7) {
-        document.getElementById('printWeek').innerHTML = "Sunday"
+        document.getElementById('printWeek').innerHTML = "<span style='color: green; font-size: 18px;'>Sunday</span>"
     }
     else {
-        document.getElementById('printWeek').innerHTML = "Invalid! input"
+        document.getElementById('printWeek').innerHTML = "<span style='color: black; font-size: 18px;'>Invalid! input</span>"
     }
 }
 
@@ -289,43 +289,43 @@ function printMonth() {
     }
 
     if (num == 1) {
-        document.getElementById('printMonth').innerHTML = "January"
+        document.getElementById('printMonth').innerHTML = "<span style='color: green; font-size: 18px;'>January</span>"
     }
     else if (num == 2) {
-        document.getElementById('printMonth').innerHTML = "February"
+        document.getElementById('printMonth').innerHTML = "<span style='color: green; font-size: 18px;'>February</span>"
     }
     else if (num == 3) {
-        document.getElementById('printMonth').innerHTML = "March"
+        document.getElementById('printMonth').innerHTML = "<span style='color: green; font-size: 18px;'>March</span>"
     }
     else if (num == 4) {
-        document.getElementById('printMonth').innerHTML = "April"
+        document.getElementById('printMonth').innerHTML = "<span style='color: green; font-size: 18px;'>April</span>"
     }
     else if (num == 5) {
-        document.getElementById('printMonth').innerHTML = "May"
+        document.getElementById('printMonth').innerHTML = "<span style='color: green; font-size: 18px;'>May</span>"
     }
     else if (num == 6) {
-        document.getElementById('printMonth').innerHTML = "June"
+        document.getElementById('printMonth').innerHTML = "<span style='color: green; font-size: 18px;'>June</span>"
     }
     else if (num == 7) {
-        document.getElementById('printMonth').innerHTML = "July"
+        document.getElementById('printMonth').innerHTML = "<span style='color: green; font-size: 18px;'>July</span>"
     }
     else if (num == 8) {
-        document.getElementById('printMonth').innerHTML = "August"
+        document.getElementById('printMonth').innerHTML = "<span style='color: green; font-size: 18px;'>August</span>"
     }
     else if (num == 9) {
-        document.getElementById('printMonth').innerHTML = "September"
+        document.getElementById('printMonth').innerHTML = "<span style='color: green; font-size: 18px;'>September</span>"
     }
     else if (num == 10) {
-        document.getElementById('printMonth').innerHTML = "October"
+        document.getElementById('printMonth').innerHTML = "<span style='color: green; font-size: 18px;'>October</span>"
     }
     else if (num == 11) {
-        document.getElementById('printMonth').innerHTML = "November"
+        document.getElementById('printMonth').innerHTML = "<span style='color: green; font-size: 18px;'>November</span>"
     }
     else if (num == 12) {
-        document.getElementById('printMonth').innerHTML = "December"
+        document.getElementById('printMonth').innerHTML = "<span style='color: green; font-size: 18px;'>December</span>"
     }
     else {
-        document.getElementById('printMonth').innerHTML = "Invalid! input"
+        document.getElementById('printMonth').innerHTML = "<span style='color: black;'>Invalid! input"
     }
 }
 
@@ -394,7 +394,7 @@ function checkTriangleOrNot() {
     var sumOfAngle = angle1 + angle2 + angle3;
 
     if (sumOfAngle === 180) {
-        document.getElementById('checkTriangleOrNot').innerHTML = "This triangle is valid.";
+        document.getElementById('checkTriangleOrNot').innerHTML = "<span style='color: green;'>This triangle is valid.</span>";
     }
     else {
         document.getElementById('checkTriangleOrNot').innerHTML = "This triangle is not valid.";
@@ -434,7 +434,7 @@ function checkTriangleOrNotBySides() {
     // of triangle is true than this is valid triangle.
 
     if ((side1 + side2 > side3) && (side2 + side3 > side1) && side3 + side1 > side2) {
-        document.getElementById('checkTriangleOrNotBySides').innerHTML = "This triangle is valid.";
+        document.getElementById('checkTriangleOrNotBySides').innerHTML = "<span style='color: green;'>This triangle is valid.</span>";
     }
     else {
         document.getElementById('checkTriangleOrNotBySides').innerHTML = "This triangle is not valid.";
@@ -472,13 +472,13 @@ function triEquiIsosScal() {
 
     if (side1 + side2 > side3 && side2 + side3 > side1 && side1 + side3 > side2) {
         if (side1 === side2 && side2 === side3) {
-            document.getElementById('triEquiIsosScal').innerHTML = "The triangle is equilateral.";
+            document.getElementById('triEquiIsosScal').innerHTML = "<span style='color: green;'>The triangle is equilateral.</span>";
         }
         else if (side1 === side2 || side2 === side3 || side1 === side3) {
-            document.getElementById('triEquiIsosScal').innerHTML = "The triangle is isosceles.";
+            document.getElementById('triEquiIsosScal').innerHTML = "<span style='color: green;'>The triangle is isosceles.</span>";
         }
         else {
-            document.getElementById('triEquiIsosScal').innerHTML = "The triangle is scalene.";
+            document.getElementById('triEquiIsosScal').innerHTML = "<span style='color: green;'>The triangle is scalene.</span>";
         }
     }
     else {
@@ -512,15 +512,15 @@ function profitLoss() {
     const profitOrLoss = sellingPrice - costPrice;
 
     if (profitOrLoss > 0) {
-        document.getElementById("profitLoss").innerHTML = "The item has a profit of " + profitOrLoss.toFixed(2);
+        document.getElementById("profitLoss").innerHTML = "The item has a profit of: <span style='color: green; font-size: 18px;'>" + profitOrLoss.toFixed(2) + "</span>";
         // document.getElementById("profitLoss").innerHTML = `The item has a profit of ${profitOrLoss.toFixed(2)}.`;
     }
     else if (profitOrLoss === 0) {
-        document.getElementById("profitLoss").innerHTML = "The item has neither a profit nor a loss.";
+        document.getElementById("profitLoss").innerHTML = "<span style='color: green;'>The item has neither a profit nor a loss.</span>";
     }
     else {
         // Math.abs method/function is used to remove the negative sign from the integer or floating values.
-        document.getElementById("profitLoss").innerHTML = "The item has a loss of " + Math.abs(profitOrLoss).toFixed(2);
+        document.getElementById("profitLoss").innerHTML = "<span style='color: black;'>The item has a loss of: </span> <span style='font-size: 18px;'>" + Math.abs(profitOrLoss).toFixed(2) + "</span>";
         // document.getElementById("profitLoss").innerHTML = `The item has a loss of ${Math.abs(profitOrLoss).toFixed(2)}.`;
         // console.log(`The item has a loss of ${Math.abs(profitOrLoss).toFixed(2)}.`);
     }
@@ -599,7 +599,7 @@ function perGraFiveSubjects() {
         grade = "F";
     }
 
-    document.getElementById("perGraFiveSubjects").innerHTML = "Total marks obtained: " + totalMarks + "/500<br> Percentage obtained: " + percentage + "% <br> Grade: " + grade;
+    document.getElementById("perGraFiveSubjects").innerHTML = "Total marks obtained: <span style='color: green; font-size: 18px;'>" + totalMarks + "</span><span style='color: black; font-size: 18px;'>/500 </span><br> Percentage obtained: <span style='color: green; font-size: 18px;'>" + percentage + "% </span><br> Grade: <span style='color: green; font-size: 18px;'>" + grade + "</span>";
     // document.getElementById('perGraFiveSubjects').innerHTML = `Total marks obtained: ${totalMarks}/500 <br> Percentage obtained: ${percentage.toFixed(2)}% <br> Grade: ${grade}`
 }
 
@@ -634,7 +634,7 @@ function calGrossSalary() {
 
     let grossSalary = basicSalary + HRA + DA;
 
-    document.getElementById("calGrossSalary").innerHTML = "Basic Salary: " + basicSalary + "<br> HRA: " + HRA + " <br> DA: " + DA + "<br> Gross Salary: " + grossSalary;
+    document.getElementById("calGrossSalary").innerHTML = "Basic Salary: <span style='color: green; font-size: 18px;'>" + basicSalary + "</span><br> HRA: <span style='color: green; font-size: 18px;'>" + HRA + "</span><br> DA: <span style='color: green; font-size: 18px;'>" + DA + "</span><br> Gross Salary: <span style='color: green; font-size: 18px;'>" + grossSalary + "</span>";
 }
 
 // !====================== 21 ======================!
@@ -646,6 +646,12 @@ function calGrossSalary() {
 // An additional surcharge of 20% is added to the bill
 function electricityBill() {
     let unitCharges = parseFloat(document.getElementById('unitCharges').value);
+
+    if (!unitCharges) {
+        document.getElementById('electricityBill').innerHTML = "Please enter electricity unit charges";
+        alert("Please enter electricity unit charges");
+        return;
+    }
 
     let totalBill;
 
@@ -667,16 +673,6 @@ function electricityBill() {
 
     document.getElementById('electricityBill').innerHTML = "Total Electricity Bill: <span style='color: green; font-size: 18px;'>" + totalBill + "</span>";
 }
-
-
-
-
-
-
-
-
-
-
 
 
 function autoClearInput() {
