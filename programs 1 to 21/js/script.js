@@ -668,7 +668,7 @@ function perGraFiveSubjects() {
         grade = "F";
     }
 
-    document.getElementById("perGraFiveSubjects").innerHTML = "Total marks obtained: <span style='color: green; font-size: 18px;'>" + totalMarks + "</span><span style='color: black; font-size: 18px;'>/500 </span><br> Percentage obtained: <span style='color: green; font-size: 18px;'>" + percentage + "% </span><br> Grade: <span style='color: green; font-size: 18px;'>" + grade + "</span>";
+    document.getElementById("perGraFiveSubjects").innerHTML = "Total marks obtained: <span style='color: green; font-size: 18px;'>" + totalMarks + "</span><span style='color: black; font-size: 18px;'>/500 </span><br> Percentage obtained: <span style='color: green; font-size: 18px;'>" + percentage.toFixed(2) + "% </span><br> Grade: <span style='color: green; font-size: 18px;'>" + grade + "</span>";
     // document.getElementById('perGraFiveSubjects').innerHTML = `Total marks obtained: ${totalMarks}/500 <br> Percentage obtained: ${percentage.toFixed(2)}% <br> Grade: ${grade}`
 }
 
