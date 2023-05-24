@@ -62,8 +62,9 @@ function checkPasswordStrength() {
     strengthText.textContent = ""
     // console.log(strengthText);
 
-    document.getElementBy
-
+    var new1 = document.querySelector('.new');
+    new1.className = "new1"
+    console.log(new1);
 
 }
 
