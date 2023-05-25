@@ -127,7 +127,28 @@ function checkPasswordStrength() {
 
 function checkPalindrome() {
     let input = inputFieldValues("input");
+    
+    if (!input) {
+        result.textContent = "Please Enter Number";
+        return;
+    }
+    
     let result = document.getElementById('result');
+
+    var formattedInput = input.replace(/\s/g, '').toLowerCase();
+    console.log(formattedInput);
+
+    var reversedInput = formattedInput.split('').reverse().join("");
+    console.log(reversedInput);
+    
+
+
+
+
+    // const sentence = 'Hello,     world!    ';
+    // const result = sentence.replace(/\s/g, '');
+    // console.log(result);
+
 
 
 }
