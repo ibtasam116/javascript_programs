@@ -96,13 +96,9 @@ function checkPasswordStrength() {
         case 4:
             strengthText.textContent = "Extremely Strong"
             break;
-    
-        default:
-            break;
     }
     strengthMeter.value = strength;
-
-
+// This is my try Done
 }
 
 
