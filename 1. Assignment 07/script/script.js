@@ -98,34 +98,39 @@ function checkPasswordStrength() {
             break;
     }
     strengthMeter.value = strength;
-// This is my try Done
+    // This is my try Done
 }
 
+
+// function checkPalindrome() {
+//     var input = inputFieldValues("input")
+//     var result = document.getElementById('result');
+
+//     // Remove spaces and convert to lowercase for comparison
+//     var formattedInput = input.replace(/\s/g, '').toLowerCase();
+
+//     // Reverse the string
+//     var reversedInput = formattedInput.split('').reverse().join('');
+
+//     if (!input) {
+//         result.textContent = 'Please Enter Number'
+//         return;
+//     }
+
+//     // Check if the reversed string is equal to the original string
+//     if (formattedInput === reversedInput) {
+//         result.textContent = 'Palindrome';
+//     } else {
+//         result.textContent = 'Not a Palindrome';
+//     }
+// }
 
 function checkPalindrome() {
-    var input = inputFieldValues("input")
-    var result = document.getElementById('result');
+    let input = inputFieldValues("input");
+    let result = document.getElementById('result');
 
-    // Remove spaces and convert to lowercase for comparison
-    var formattedInput = input.replace(/\s/g, '').toLowerCase();
 
-    // Reverse the string
-    var reversedInput = formattedInput.split('').reverse().join('');
-
-    if (!input) {
-        result.textContent = 'Please Enter Number'
-        return;
-    }
-
-    // Check if the reversed string is equal to the original string
-    if (formattedInput === reversedInput) {
-        result.textContent = 'Palindrome';
-    } else {
-        result.textContent = 'Not a Palindrome';
-    }
 }
-
-
 
 
 
