@@ -148,15 +148,16 @@ function checkPalindrome() {
         result.textContent = "Not a Palindrome";
     }
 
-
-
-
     // const sentence = 'Hello,     world!    ';
     // const result = sentence.replace(/\s/g, '');
     // console.log(result);
+}
 
+function radomNumberGame() {
+    const randomNumber = Math.floor(Math.random() * 50) + 1;
+    let attempts = 0;
 
-
+    console.log(randomNumber);
 }
 
 

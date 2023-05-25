@@ -35,8 +35,17 @@
         <span id="result" class="ms-3 h5 fw-bold pt-5"></span>
       </div>
     </div>
-  </div>
+    <br><br>
 
+    <form id="guess-form">
+      <label for="guess-input">Enter your guess (1-100):</label>
+      <input type="number" id="guess-input" min="1" max="100" required>
+      <button type="submit" onclick="radomNumberGame()">Submit</button>
+    </form>
+    <p id="feedback-message"></p>
+    <input type="button" onclick="radomNumberGame()" value="Check" class="btn btn-success shadow">
+  </div>
+  
 
 
   <script src="./script/script.js"></script>
@@ -49,61 +58,3 @@
 </html>
 
 
-<!-- <!DOCTYPE html>
-<html>
-<head>
-  <title>Password Strength Checker</title>
-  <script>
-    function checkPasswordStrength() {
-      var password = document.getElementById('password').value;
-      var strengthMeter = document.getElementById('strength-meter');
-      var strengthText = document.getElementById('strength-text');
-
-      // Reset the strength meter and text
-      strengthMeter.value = 0;
-      strengthText.textContent = '';
-
-      // Check the password strength based on criteria
-      var strength = 0;
-      if (password.length >= 8) {
-        strength += 1;
-      }
-      if (/[a-z]/.test(password) && /[A-Z]/.test(password)) {
-        strength += 1;
-      }
-      if (/\d/.test(password)) {
-        strength += 1;
-      }
-      if (/[!@#$%^&*()_+\-=[\]{};':"\\|,.<>/?]/.test(password)) {
-        strength += 1;
-      }
-
-      // Update the strength meter and text
-      strengthMeter.value = strength;
-      switch (strength) {
-        case 0:
-          strengthText.textContent = 'Weak';
-          break;
-        case 1:
-          strengthText.textContent = 'Moderate';
-          break;
-        case 2:
-          strengthText.textContent = 'Strong';
-          break;
-        case 3:
-          strengthText.textContent = 'Very Strong';
-          break;
-        case 4:
-          strengthText.textContent = 'Extremely Strong';
-          break;
-      }
-    }
-  </script>
-</head>
-<body>
-  <h1>Password Strength Checker</h1>
-  <input type="password" id="password" oninput="checkPasswordStrength()">
-  <progress id="strength-meter" max="4" value="0"></progress>
-  <span id="strength-text"></span>
-</body>
-</html> -->
