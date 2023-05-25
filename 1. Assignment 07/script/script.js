@@ -153,13 +153,29 @@ function checkPalindrome() {
     // console.log(result);
 }
 
-function radomNumberGame() {
+window.onload = function () {
     const randomNumber = Math.floor(Math.random() * 50) + 1;
     let attempts = 0;
-
     console.log(randomNumber);
+
+    const guessForm = document.getElementById('guess-form');
+    const guessInput = document.getElementById('guess-input');
+    const feedbackMessage = document.getElementById('feedback-message');
+    const attemptsCount = document.getElementById('attempts-count');
+
+
+    guessForm.addEventListener('submit', function (event) {
+        // event.preventDefault();
+        const userGuess = parseInt(guessInput.value);
+        attempts++;
+        console.log(guessForm);
+        console.log(guessInput);
+        console.log(attempts);
+
+    });
 }
 
+window.onload(window.te)
 
 
 
