@@ -59,21 +59,47 @@ function checkPasswordStrength() {
 
     strengthMeter.value = 0;
     // console.log(strengthMeter);
-    strengthText.textContent = ""
+    strengthText.textContent = "";
     // console.log(strengthText);
 
     var strength = 0;
 
     if (password.length >= 8) {
-        strength += 1
+        strength += 1;
     }
 
     if (/[A-Z]/.test(password) && /[a-z]/.test(password)) {
-        strength += 1
+        strength += 1;
     }
 
-    
+    if (/\d/.test(password)) {
+        strength += 1;
+    }
 
+    if (/[!@#$%^&*()_+\-=[\]{};':"\\|,.<>/?]/.test(password)) {
+        strength += 1;
+    }
+
+    switch (strength) {
+        case 0:
+            strengthText.textContent = "Week"
+            break;
+        case 1:
+            strengthText.textContent = "Moderate"
+            break;
+        case 2:
+            strengthText.textContent = "Strong"
+            break;
+        case 3:
+            strengthText.textContent = "Very Strong"
+            break;
+        case 4:
+            strengthText.textContent = "Extremely Strong"
+            break;
+    
+        default:
+            break;
+    }
     strengthMeter.value = strength;
 
 
