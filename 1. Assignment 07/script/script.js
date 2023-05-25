@@ -62,6 +62,14 @@ function checkPasswordStrength() {
     strengthText.textContent = ""
     // console.log(strengthText);
 
+    var strength = 0;
+
+    if (password.length >= 8) {
+        strength += 4
+    }
+
+    strengthMeter.value = strength;
+
 }
 
 
