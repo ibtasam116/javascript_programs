@@ -136,10 +136,10 @@ function checkPalindrome() {
     let result = document.getElementById('result');
 
     var formattedInput = input.replace(/\s/g, '').toLowerCase();
-    console.log(formattedInput);
+    // console.log(formattedInput);
 
     var reversedInput = formattedInput.split('').reverse().join("");
-    console.log(reversedInput);
+    // console.log(reversedInput);
 
     if (formattedInput === reversedInput) {
         result.textContent = "Palindrome";
