@@ -153,32 +153,49 @@ function checkPalindrome() {
     // console.log(result);
 }
 
-window.onload = function () {
-    const randomNumber = Math.floor(Math.random() * 50) + 1;
-    let attempts = 0;
-    console.log(randomNumber);
-
-    const guessForm = document.getElementById('guess-form');
-    const guessInput = document.getElementById('guess-input');
-    const feedbackMessage = document.getElementById('feedback-message');
-    const attemptsCount = document.getElementById('attempts-count');
 
 
-    guessForm.addEventListener('submit', function (event) {
-        // event.preventDefault();
-        const userGuess = parseInt(guessInput.value);
-        attempts++;
-        console.log(guessForm);
-        console.log(guessInput);
-        console.log(attempts);
+// Array of image URLs
+var imageUrls = [
+    "https://example.com/image1.jpg",
+    "https://example.com/image2.jpg",
+    "https://example.com/image3.jpg"
+  ];
 
-    });
-}
+  var currentIndex = 0;
+  var imageElement = document.getElementById("carousel-image");
+  var previousButton = document.getElementById("previous-button");
+  var nextButton = document.getElementById("next-button");
 
-window.onload(window.te)
+  function updateImage() {
+    imageElement.src = imageUrls[currentIndex];
+  }
 
+  function showPreviousImage() {
+    if (currentIndex === 0) {
+      currentIndex = imageUrls.length - 1;
+    } else {
+      currentIndex--;
+    }
 
+    updateImage();
+  }
 
+  function showNextImage() {
+    if (currentIndex === imageUrls.length - 1) {
+      currentIndex = 0;
+    } else {
+      currentIndex++;
+    }
+
+    updateImage();
+  }
+
+  previousButton.addEventListener("click", showPreviousImage);
+  nextButton.addEventListener("click", showNextImage);
+
+  // Initialize the carousel with the first image
+  updateImage();
 
 
 
