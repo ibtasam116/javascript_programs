@@ -154,6 +154,10 @@ function checkPalindrome() {
 }
 
 
+function Slider(params) {
+  
+}
+
 
 
 
