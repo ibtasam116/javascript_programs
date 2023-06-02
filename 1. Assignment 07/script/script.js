@@ -155,50 +155,6 @@ function checkPalindrome() {
 
 
 
-// Array of image URLs
-var imageUrls = [
-    "https://example.com/image1.jpg",
-    "https://example.com/image2.jpg",
-    "https://example.com/image3.jpg"
-  ];
-
-  var currentIndex = 0;
-  var imageElement = document.getElementById("carousel-image");
-  var previousButton = document.getElementById("previous-button");
-  var nextButton = document.getElementById("next-button");
-
-  function updateImage() {
-    imageElement.src = imageUrls[currentIndex];
-  }
-
-  function showPreviousImage() {
-    if (currentIndex === 0) {
-      currentIndex = imageUrls.length - 1;
-    } else {
-      currentIndex--;
-    }
-
-    updateImage();
-  }
-
-  function showNextImage() {
-    if (currentIndex === imageUrls.length - 1) {
-      currentIndex = 0;
-    } else {
-      currentIndex++;
-    }
-
-    updateImage();
-  }
-
-  previousButton.addEventListener("click", showPreviousImage);
-  nextButton.addEventListener("click", showNextImage);
-
-  // Initialize the carousel with the first image
-  updateImage();
-
-
-
 
 
 function inputFieldValues(fieldId) {
