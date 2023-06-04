@@ -154,7 +154,14 @@ function checkPalindrome() {
 }
 
 
-var password = []
+var password = ["test", "test@1234", "test1234", "Test@1234"]
+
+var newPassword = password.map((Element) =>{
+
+    console.log(Element);
+
+})
+
 
 
 function inputFieldValues(fieldId) {
