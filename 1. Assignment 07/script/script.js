@@ -154,11 +154,7 @@ function checkPalindrome() {
 }
 
 
-function Slider(params) {
-  
-}
-
-
+var password = []
 
 
 function inputFieldValues(fieldId) {
