@@ -1,4 +1,4 @@
-Meter// function checkPasswordStrength() {
+// function checkPasswordStrength() {
 //     var password = inputFieldValues("password");
 //     var strengthMeter = document.getElementById('strength-meter');
 //     var strengthText = document.getElementById('strength-text');
@@ -51,55 +51,55 @@ Meter// function checkPasswordStrength() {
 // }
 
 
-function checkPasswordStrength() {
-    var password = inputFieldValues('password');
-    // console.log(password);
-    var strengthMeter = document.getElementById("strength-meter");
-    var strengthText = document.getElementById("strength-text");
+// function checkPasswordStrength() {
+//     var password = inputFieldValues('password');
+//     // console.log(password);
+//     var strengthMeter = document.getElementById("strength-meter");
+//     var strengthText = document.getElementById("strength-text");
 
-    strengthMeter.value = 0;
-    // console.log(strengthMeter);
-    strengthText.textContent = "";
-    // console.log(strengthText);
+//     strengthMeter.value = 0;
+//     // console.log(strengthMeter);
+//     strengthText.textContent = "";
+//     // console.log(strengthText);
 
-    var strength = 0;
+//     var strength = 0;
 
-    if (password.length >= 8) {
-        strength += 1;
-    }
+//     if (password.length >= 8) {
+//         strength += 1;
+//     }
 
-    if (/[A-Z]/.test(password) && /[a-z]/.test(password)) {
-        strength += 1;
-    }
+//     if (/[A-Z]/.test(password) && /[a-z]/.test(password)) {
+//         strength += 1;
+//     }
 
-    if (/\d/.test(password)) {
-        strength += 1;
-    }
+//     if (/\d/.test(password)) {
+//         strength += 1;
+//     }
 
-    if (/[!@#$%^&*()_+\-=[\]{};':"\\|,.<>/?]/.test(password)) {
-        strength += 1;
-    }
+//     if (/[!@#$%^&*()_+\-=[\]{};':"\\|,.<>/?]/.test(password)) {
+//         strength += 1;
+//     }
 
-    switch (strength) {
-        case 0:
-            strengthText.textContent = "Week"
-            break;
-        case 1:
-            strengthText.textContent = "Moderate"
-            break;
-        case 2:
-            strengthText.textContent = "Strong"
-            break;
-        case 3:
-            strengthText.textContent = "Very Strong"
-            break;
-        case 4:
-            strengthText.textContent = "Extremely Strong"
-            break;
-    }
-    strengthMeter.value = strength;
-    // This is my try Done
-}
+//     switch (strength) {
+//         case 0:
+//             strengthText.textContent = "Week"
+//             break;
+//         case 1:
+//             strengthText.textContent = "Moderate"
+//             break;
+//         case 2:
+//             strengthText.textContent = "Strong"
+//             break;
+//         case 3:
+//             strengthText.textContent = "Very Strong"
+//             break;
+//         case 4:
+//             strengthText.textContent = "Extremely Strong"
+//             break;
+//     }
+//     strengthMeter.value = strength;
+//     // This is my try Done
+// }
 
 
 // function checkPalindrome() {
@@ -125,42 +125,42 @@ function checkPasswordStrength() {
 //     }
 // }
 
-function checkPalindrome() {
-    let input = inputFieldValues("input");
+// function checkPalindrome() {
+//     let input = inputFieldValues("input");
 
-    if (!input) {
-        result.textContent = "Please Enter Number";
-        return;
-    }
+//     if (!input) {
+//         result.textContent = "Please Enter Number";
+//         return;
+//     }
 
-    let result = document.getElementById('result');
+//     let result = document.getElementById('result');
 
-    var formattedInput = input.replace(/\s/g, '').toLowerCase();
-    // console.log(formattedInput);
+//     var formattedInput = input.replace(/\s/g, '').toLowerCase();
+//     // console.log(formattedInput);
 
-    var reversedInput = formattedInput.split('').reverse().join("");
-    // console.log(reversedInput);
+//     var reversedInput = formattedInput.split('').reverse().join("");
+//     // console.log(reversedInput);
 
-    if (formattedInput === reversedInput) {
-        result.textContent = "Palindrome";
-    }
-    else {
-        result.textContent = "Not a Palindrome";
-    }
+//     if (formattedInput === reversedInput) {
+//         result.textContent = "Palindrome";
+//     }
+//     else {
+//         result.textContent = "Not a Palindrome";
+//     }
 
-    // const sentence = 'Hello,     world!    ';
-    // const result = sentence.replace(/\s/g, '');
-    // console.log(result);
-}
+//     // const sentence = 'Hello,     world!    ';
+//     // const result = sentence.replace(/\s/g, '');
+//     // console.log(result);
+// }
 
 
 var password = ["test", "test@1234", "test1234", "Test@1234"]
 
-var newPassword = password.map((Element) =>{
-
+var newPassword = password.map((Element)=>{
     console.log(Element);
-
+    
 })
+
 
 
 
