@@ -158,7 +158,11 @@ var password = ["test", "test@1234", "test1234", "Test@1234"]
 
 var newPassword = password.map((Element)=>{
     console.log(Element);
-    
+
+    var digit = false;
+    var lowerLeter = false;
+    var 
+
 })
 
 
