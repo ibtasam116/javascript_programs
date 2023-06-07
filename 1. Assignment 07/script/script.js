@@ -162,6 +162,7 @@ var newPassword = password.map((Element)=>{
     var digit = false;
     var lowerLeter = false;
     var upperLetter = false;
+    var specialChar = false;
 
 })
 
