@@ -164,8 +164,9 @@ var newPassword = password.map((Element)=>{
     var upperLetter = false;
     var specialChar = false;
 
-    for (let index = 0; index < array.length; index++) {
+    for (let index = 0; index < element.length; index++) {
         const element = array[index];
+        
         
     }
 
