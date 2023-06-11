@@ -156,7 +156,7 @@
 
 var password = ["test", "test@1234", "test1234", "Test@1234"]
 
-var newPassword = password.map((Element)=>{
+var newPassword = password.map((element)=>{
     console.log(Element);
 
     var digit = false;
@@ -165,10 +165,11 @@ var newPassword = password.map((Element)=>{
     var specialChar = false;
 
     for (let index = 0; index < element.length; index++) {
-        const element = array[index];
+        const char = element[index];
         
-        
+        console.log(char);
     }
+
 
 })
 
