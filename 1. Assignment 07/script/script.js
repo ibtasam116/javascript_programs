@@ -153,8 +153,15 @@
 //     // console.log(result);
 // }
 
+var input = prompt("Enter password");
+
 
 var password = ["test", "test@1234", "test1234", "Test@1234"]
+
+password.push(input)
+
+console.log("Updated password array:", password);
+
 
 var newPassword = password.map((element) => {
     console.log(element);
@@ -198,6 +205,7 @@ var newPassword = password.map((element) => {
 
 })
 
+console.log(newPassword)
 
 
 
