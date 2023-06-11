@@ -156,37 +156,45 @@
 
 var password = ["test", "test@1234", "test1234", "Test@1234"]
 
-var newPassword = password.map((element)=>{
+var newPassword = password.map((element) => {
     console.log(element);
 
-    isLength = false;
-    var digit = false;
-    var lowerLeter = false;
-    var upperLetter = false;
-    var specialChar = false;
+    var isLength = false;
+    var isDigit = false;
+    var isSmall = false;
+    var isCapital = false;
+    var isSepcial = false;
 
     for (let index = 0; index < element.length; index++) {
         const char = element[index];
         console.log(char);
-    
-    if (element.length > 8) {
-        isLength = true;
+
+        if (element.length > 8) {
+            isLength = true;
+        }
+
+        if (char >= 0 && char <= 9) {
+            isDigit = true
+        }
+
+        if (char <= 'z' && char >= 'a') {
+            isSmall = true
+        }
+
+        if (char <= 'Z' && char >= 'A') {
+            isCapital = true
+        }
+
+        if (char === "@" || char === "#") {
+            isSepcial = true
+        }
     }
 
-    if (char <= 'z' && char >= 'a') {
-        isSmall = true
+    if (isLength && isDigit && isSmall && isCapital && isSepcial) {
+        return true;
     }
 
-    if (char <= 'Z' && char >= 'A') {
-        isCapital = true
-    }
-
-    if (char === "@" || char === "#") {
-        isSepcial = true
-    }
-    
-    }
-
+    return false;
 
 })
 
