@@ -1,6 +1,6 @@
-Password Strength Checker: Create a program that takes a password input from the user and checks its strength based on criteria such as length, use of special characters, uppercase and lowercase letters, and numbers. The program should then display the strength rating on the webpage.
+* Password Strength Checker: Create a program that takes a password input from the user and checks its strength based on criteria such as length, use of special characters, uppercase and lowercase letters, and numbers. The program should then display the strength rating on the webpage.
 
-Palindrome Checker: Create a program that takes a string input from the user and checks if it is a palindrome (i.e., the string reads the same forwards and backwards). The program should then display the result on the webpage.
+* Palindrome Checker: Create a program that takes a string input from the user and checks if it is a palindrome (i.e., the string reads the same forwards and backwards). The program should then display the result on the webpage.
 
 Image Carousel: Create an image carousel that allows the user to click on buttons to move between images. You can use an array of image URLs and an index variable to keep track of the current image being displayed.
 

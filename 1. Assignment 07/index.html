@@ -32,21 +32,30 @@
         reads the same forwards and backwards). The program should then display the result on the webpage. -->
         <h5>Palindrome Checker</h5>
         <div class="input-group input-group-sm mb-3">
-          <input type="text" id="input" placeholder="Enter Number"
-            class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+          <input type="text" id="input" placeholder="Enter Number" class="form-control"
+            aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
         </div>
         <input type="button" onclick="checkPalindrome()" value="Check" class="btn btn-success shadow">
         <span id="result" class="ms-3 h5 fw-bold pt-5"></span>
       </div>
+
+      <div class="col-sm-12 col-md-4">
+        <!-- Flashcard App: Create a flashcard app that displays a question and answer pair and allows the user to flip the card to see the answer. You can use an array of objects to store the question and answer pairs and a variable to keep track of the current card being displayed. -->
+        <h5>Flashcard App</h5>
+        <div class="flashcard">
+          <div id="question" class="card-text h4"></div>
+          <div id="answer" class="card-text hidden fw-bold text-success"></div>
+          <button id="flipButton" class="card-button btn btn-secondary">Flip</button>
+          <button id="nextButton" class="card-button btn btn-secondary">Next</button>
+        </div>
+      </div>
     </div>
+
   </div>
 
-  <div class="carousel-container">
-    <img id="carousel-image" class="carousel-image" src="" alt="Carousel Image">
-    <button id="previous-button" class="carousel-button previous">Previous</button>
-    <button id="next-button" class="carousel-button next">Next</button>
-  </div>
-  
+
+
+
 
 
   <script src="./script/script.js"></script>
@@ -57,5 +66,3 @@
 </body>
 
 </html>
-
-
